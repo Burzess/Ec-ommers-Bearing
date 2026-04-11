@@ -18,4 +18,4 @@
                 </a>
             </div>
 
-            <div class="w-full sm:max-w-md mt-8 px-8 py-10 bg-white shadow-lg overflow-hidden sm:rounded-2xl border border-gray-100">
+            <div class="w-full sm:max-w-md mt-8 px-8 py-10 overflow-hidden relative">
