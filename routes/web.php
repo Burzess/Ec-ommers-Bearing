@@ -7,23 +7,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $products = Product::with('category')->get();
     return view('dashboard', compact('products'));
-});
+})->name('dashboard');
 
 Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-Route::get('/dashboard', function () {
-    $products = Product::with('category')->get();
-    return view('dashboard', compact('products'));
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/products/{product}', function (Product $product) {
+    $product->load('category');
+    return view('products.show', compact('product'));
+})->name('products.show');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/products/{product}', function (Product $product) {
-        $product->load('category');
-        return view('products.show', compact('product'));
-    })->name('products.show');
-
     Route::get('/cart', [\App\Http\Controllers\CartController::class, 'index'])->name('cart.index');
     Route::post('/cart/{product}', [\App\Http\Controllers\CartController::class, 'add'])->name('cart.add');
     Route::put('/cart/items/{cartItem}', [\App\Http\Controllers\CartController::class, 'update'])->name('cart.update');

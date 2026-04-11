@@ -34,6 +34,7 @@
                     <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs font-bold px-1.5 py-0.5 rounded-full">{{ auth()->check() && auth()->user()->cart ? auth()->user()->cart->items->sum('quantity') : 0 }}</span>
                 </a>
 
+                @auth
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:text-red-600 focus:outline-none transition ease-in-out duration-150">
@@ -64,6 +65,10 @@
                         </form>
                     </x-slot>
                 </x-dropdown>
+                @else
+                <a href="{{ route('login') }}" class="text-sm font-medium text-gray-700 hover:text-red-600 transition-colors">Log in</a>
+                <a href="{{ route('register') }}" class="text-sm font-medium text-white bg-red-600 hover:bg-red-700 px-4 py-2 rounded-md transition-colors">Register</a>
+                @endauth
             </div>
 
             <!-- Hamburger -->
@@ -89,6 +94,7 @@
             </x-responsive-nav-link>
         </div>
 
+        @auth
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
             <div class="px-4">
@@ -113,8 +119,22 @@
                 </form>
             </div>
         </div>
+        @else
+        <!-- Responsive unauthenticated options -->
+        <div class="pt-4 pb-1 border-t border-gray-200">
+            <div class="mt-3 space-y-1">
+                <x-responsive-nav-link :href="route('login')">
+                    {{ __('Log in') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('register')">
+                    {{ __('Register') }}
+                </x-responsive-nav-link>
+            </div>
+        </div>
+        @endauth
     </div>
 </nav>
+
 
 
 
