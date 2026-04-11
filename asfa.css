@@ -1,0 +1,9307 @@
+/* Produk */
+
+position: relative;
+width: 1440px;
+height: 2461px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -91px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFBFB;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFBFB;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFBFB;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFBFB;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFBFB;
+
+
+/* btn produk */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px;
+gap: 15px;
+
+position: absolute;
+width: 1259px;
+height: 91px;
+left: 90px;
+top: 244px;
+
+background: #FFFFFF;
+border: 4px solid #020202;
+border-radius: 10px;
+
+
+/* Frame 3 */
+
+width: 405px;
+height: 61px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cari Merk / Nama / Tipe Produk */
+
+position: absolute;
+width: 319px;
+height: 30px;
+left: 23px;
+top: 16px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #666666;
+
+
+
+/* Rectangle 53 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 502px;
+height: 278px;
+left: 107px;
+top: 1459px;
+
+background: url(g3.jpg);
+border: 3px solid #000000;
+border-radius: 60px;
+
+
+/* Rectangle 54 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 502px;
+height: 278px;
+left: 105px;
+top: 1941px;
+
+background: url(g4.jpg);
+border: 3px solid #000000;
+border-radius: 60px;
+
+
+/* Bearing 6301 2RS */
+
+position: absolute;
+width: 709px;
+height: 156px;
+left: 531px;
+top: 1509px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Bearing 6301 ZZ */
+
+position: absolute;
+width: 709px;
+height: 156px;
+left: 531px;
+top: 2001px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* WhatsApp Image 2026-03-06 at 19.53.25 4 */
+
+position: absolute;
+width: 93.24px;
+height: 93.24px;
+left: 1033px;
+top: 2131px;
+
+background: url(WhatsApp Image 2026-03-06 at 19.53.25.jpg);
+transform: rotate(168.09deg);
+
+
+/* WhatsApp Image 2026-03-06 at 19.53.25 3 */
+
+position: absolute;
+width: 93.24px;
+height: 93.24px;
+left: 1033px;
+top: 1669px;
+
+background: url(WhatsApp Image 2026-03-06 at 19.53.25.jpg);
+transform: rotate(168.09deg);
+
+
+/* Group 33 */
+
+position: absolute;
+width: 1229px;
+height: 430.48px;
+left: 104px;
+top: 393px;
+
+
+
+/* PRODUK KAMI */
+
+position: absolute;
+width: 311px;
+height: 56px;
+left: 200px;
+top: 393px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Rectangle 51 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 502px;
+height: 278px;
+left: 104px;
+top: 520px;
+
+background: url(g1.jpg);
+border: 3px solid #000000;
+border-radius: 60px;
+
+
+/* Bearing 6201 2RS */
+
+position: absolute;
+width: 709px;
+height: 156px;
+left: 531px;
+top: 393px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* WhatsApp Image 2026-03-06 at 19.53.25 1 */
+
+position: absolute;
+width: 93.24px;
+height: 93.24px;
+left: 1052px;
+top: 713px;
+
+background: url(WhatsApp Image 2026-03-06 at 19.53.25.jpg);
+transform: rotate(168.09deg);
+
+
+/* 10.000 */
+
+position: absolute;
+width: 167px;
+height: 68px;
+left: 1166px;
+top: 737px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Group 34 */
+
+position: absolute;
+width: 1212px;
+height: 309.48px;
+left: 105px;
+top: 986px;
+
+
+
+/* Rectangle 52 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 502px;
+height: 278px;
+left: 105px;
+top: 986px;
+
+background: url(g2.jpg);
+border: 3px solid #000000;
+border-radius: 60px;
+
+
+/* Bearing 6201 ZZ */
+
+position: absolute;
+width: 709px;
+height: 156px;
+left: 525px;
+top: 1058px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* WhatsApp Image 2026-03-06 at 19.53.25 2 */
+
+position: absolute;
+width: 93.24px;
+height: 93.24px;
+left: 1033px;
+top: 1185px;
+
+background: url(WhatsApp Image 2026-03-06 at 19.53.25.jpg);
+transform: rotate(168.09deg);
+
+
+/* 8.000 */
+
+position: absolute;
+width: 167px;
+height: 68px;
+left: 1150px;
+top: 1213px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* 15.000 */
+
+position: absolute;
+width: 167px;
+height: 68px;
+left: 1156px;
+top: 1696px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* 13.000 */
+
+position: absolute;
+width: 167px;
+height: 68px;
+left: 1157px;
+top: 2156px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* Add 2 */
+
+position: relative;
+width: 1440px;
+height: 2461px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFBFB;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFBFB;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFBFB;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFBFB;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFBFB;
+
+
+/* btn produk */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px;
+gap: 15px;
+
+position: absolute;
+width: 1259px;
+height: 91px;
+left: 90px;
+top: 244px;
+
+background: #FFFFFF;
+border: 4px solid #020202;
+border-radius: 10px;
+
+
+/* Frame 3 */
+
+width: 405px;
+height: 61px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cari Merk / Nama / Tipe Produk */
+
+position: absolute;
+width: 319px;
+height: 30px;
+left: 23px;
+top: 16px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #666666;
+
+
+
+/* RINCIAN PRODUK */
+
+position: absolute;
+width: 403px;
+height: 56px;
+left: 101px;
+top: 411px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Bearing 6201 ZZ */
+
+position: absolute;
+width: 564px;
+height: 149px;
+left: 799px;
+top: 580px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* 8.000 */
+
+position: absolute;
+width: 167px;
+height: 68px;
+left: 1145px;
+top: 803px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* WhatsApp Image 2026-03-06 at 19.53.25 5 */
+
+position: absolute;
+width: 93.24px;
+height: 93.24px;
+left: 1017px;
+top: 780px;
+
+background: url(WhatsApp Image 2026-03-06 at 19.53.25.jpg);
+transform: rotate(168.09deg);
+
+
+/* Rectangle 53 */
+
+position: absolute;
+width: 1259px;
+height: 21px;
+left: 91px;
+top: 1129px;
+
+background: #000000;
+
+
+/* DESKRIPSI PRODUK */
+
+position: absolute;
+width: 579px;
+height: 51px;
+left: 73px;
+top: 1215px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Group 15 */
+
+position: absolute;
+width: 565px;
+height: 82px;
+left: 447px;
+top: 2358px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 565px;
+height: 82px;
+left: 447px;
+top: 2358px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* Konfirmasi Pembelian */
+
+position: absolute;
+width: 366px;
+height: 48px;
+left: 547px;
+top: 2375px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Berikut adalah spesifikasinya : -6201 2RS ini dirancang untuk menopang beban radial dan aksial, serta mengurangi gesekan antara dua komponen bergerak. -Dengan seal, bearing ini terlindung dari debu dan kotoran, sehingga lebih tahan lama dan kuat. Cocok digunakan untuk aplikasi seperti motor listrik, peralatan rumah tangga, dan mesin industri. Pastikan untuk memeriksa spesifikasi bearing yang sesuai spesifikasi bearing yang sesuai dengan kebutuhan aplikasi anda. Dan silahkan cek stok terlebih dahulu sebelum order !! */
+
+position: absolute;
+width: 1203px;
+height: 881px;
+left: 120px;
+top: 1327px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 54px;
+
+color: #000000;
+
+
+
+/* Rectangle 56 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 700px;
+height: 414px;
+left: 101px;
+top: 543px;
+
+background: url(g2.jpg);
+border: 3px solid #000000;
+border-radius: 60px;
+
+
+/* Produk */
+
+position: relative;
+width: 1440px;
+height: 2461px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFBFB;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFBFB;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFBFB;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFBFB;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFBFB;
+
+
+/* btn produk */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px;
+gap: 15px;
+
+position: absolute;
+width: 1259px;
+height: 91px;
+left: 90px;
+top: 244px;
+
+background: #FFFFFF;
+border: 4px solid #020202;
+border-radius: 10px;
+
+
+/* Frame 3 */
+
+width: 405px;
+height: 61px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cari Merk / Nama / Tipe Produk */
+
+position: absolute;
+width: 319px;
+height: 30px;
+left: 23px;
+top: 16px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #666666;
+
+
+
+/* Konfirmasi Pembelian */
+
+position: absolute;
+width: 366px;
+height: 48px;
+left: 540px;
+top: 2357px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* RINCIAN PRODUK */
+
+position: absolute;
+width: 403px;
+height: 56px;
+left: 101px;
+top: 376px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Bearing 6201 2RS */
+
+position: absolute;
+width: 564px;
+height: 149px;
+left: 799px;
+top: 545px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* 10.000 */
+
+position: absolute;
+width: 167px;
+height: 68px;
+left: 1145px;
+top: 768px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* WhatsApp Image 2026-03-06 at 19.53.25 5 */
+
+position: absolute;
+width: 93.24px;
+height: 93.24px;
+left: 1017px;
+top: 745px;
+
+background: url(WhatsApp Image 2026-03-06 at 19.53.25.jpg);
+transform: rotate(168.09deg);
+
+
+/* Rectangle 53 */
+
+position: absolute;
+width: 1259px;
+height: 21px;
+left: 91px;
+top: 1094px;
+
+background: #000000;
+
+
+/* DESKRIPSI PRODUK */
+
+position: absolute;
+width: 579px;
+height: 51px;
+left: 73px;
+top: 1180px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Group 15 */
+
+position: absolute;
+width: 565px;
+height: 82px;
+left: 447px;
+top: 2323px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 565px;
+height: 82px;
+left: 447px;
+top: 2323px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* Konfirmasi Pembelian */
+
+position: absolute;
+width: 366px;
+height: 48px;
+left: 547px;
+top: 2340px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Berikut adalah spesifikasinya : - 6201 ZZ ASB ini memiliki desain deep groove ball bearing yang memungkinkan beban radial dan aksial. -Dengan seal ZZ, bearing ini terlindung dari debu dan kotoran, sehingga lebih tahan lama dan kuat. Cocok digunakan untuk aplikasi yang memerlukan kecepatan tinggi dan beban sedang. Pastikan untuk memeriksa spesifikasi bearing yang sesuai dengan kebutuhan aplikasi anda. Dan silahkan cek stok terlebih dahulu sebelum order !! */
+
+position: absolute;
+width: 1203px;
+height: 881px;
+left: 120px;
+top: 1292px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 54px;
+
+color: #000000;
+
+
+
+/* Rectangle 55 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 700px;
+height: 414px;
+left: 101px;
+top: 490px;
+
+background: url(g1.jpg);
+border: 3px solid #000000;
+border-radius: 60px;
+
+
+/* Proifl */
+
+position: relative;
+width: 1440px;
+height: 1430px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFBFB;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFBFB;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFBFB;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFBFB;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFBFB;
+
+
+/* PROFILE AKUN SAYA */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 104px;
+top: 236px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* NAMA PELANGGAN */
+
+position: absolute;
+width: 357px;
+height: 56px;
+left: 758px;
+top: 341px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #000000;
+
+
+
+/* Rectangle 63 */
+
+position: absolute;
+width: 536px;
+height: 750px;
+left: 67px;
+top: 319px;
+
+background: #4E69A3;
+border-radius: 60px;
+
+
+/* Rectangle 63 */
+
+position: absolute;
+width: 1055px;
+height: 21px;
+left: 674px;
+top: 319px;
+
+background: #000000;
+transform: rotate(-90deg);
+
+
+/* Rectangle */
+
+position: absolute;
+width: 639px;
+height: 91px;
+left: 758px;
+top: 393px;
+
+background: #D9D9D9;
+
+
+/* NOMOR TELEPON */
+
+position: absolute;
+width: 357px;
+height: 56px;
+left: 758px;
+top: 524px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #000000;
+
+
+
+/* Rectangle 65 */
+
+position: absolute;
+width: 639px;
+height: 91px;
+left: 758px;
+top: 576px;
+
+background: #D9D9D9;
+
+
+/* +62 812 3456 7890 */
+
+position: absolute;
+width: 364px;
+height: 60px;
+left: 780px;
+top: 592px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+color: #717171;
+
+
+
+/* EMAIL */
+
+position: absolute;
+width: 357px;
+height: 56px;
+left: 758px;
+top: 707px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #000000;
+
+
+
+/* Rectangle 66 */
+
+position: absolute;
+width: 639px;
+height: 91px;
+left: 758px;
+top: 759px;
+
+background: #D9D9D9;
+
+
+/* USERNAME */
+
+position: absolute;
+width: 357px;
+height: 56px;
+left: 756px;
+top: 890px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #000000;
+
+
+
+/* Rectangle 67 */
+
+position: absolute;
+width: 639px;
+height: 91px;
+left: 756px;
+top: 942px;
+
+background: #D9D9D9;
+
+
+/* PASSWORD */
+
+position: absolute;
+width: 357px;
+height: 56px;
+left: 756px;
+top: 1073px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #000000;
+
+
+
+/* Rectangle 68 */
+
+position: absolute;
+width: 639px;
+height: 91px;
+left: 756px;
+top: 1125px;
+
+background: #D9D9D9;
+
+
+/* ALIF */
+
+position: absolute;
+width: 83px;
+height: 60px;
+left: 780px;
+top: 409px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+color: #717171;
+
+
+
+/* alif123@gmail.com */
+
+position: absolute;
+width: 395px;
+height: 60px;
+left: 780px;
+top: 775px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+color: #717171;
+
+
+
+/* alifbearing123 */
+
+position: absolute;
+width: 290px;
+height: 60px;
+left: 780px;
+top: 958px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+color: #717171;
+
+
+
+/* b************ */
+
+position: absolute;
+width: 284px;
+height: 60px;
+left: 780px;
+top: 1141px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+color: #717171;
+
+
+
+/* ALIF */
+
+position: absolute;
+width: 83px;
+height: 60px;
+left: 780px;
+top: 409px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+color: #717171;
+
+
+
+/* User_cicrle_duotone */
+
+position: absolute;
+width: 200px;
+height: 200px;
+left: 235px;
+top: 357px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+background: rgba(0, 0, 0, 0.25);
+border-radius: 52px;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 33.33%;
+right: 33.33%;
+top: 25%;
+bottom: 41.67%;
+
+background: #FFFFFF;
+
+
+/* Intersect */
+
+position: absolute;
+width: 116.63px;
+height: 50px;
+left: 41.68px;
+top: 125px;
+
+background: #FFFFFF;
+border-radius: 0.25px;
+
+
+/* Rectangle 2 */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Duotone */
+background: rgba(126, 134, 158, 0.25);
+border-radius: 20px;
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 62.5%;
+bottom: -12.5%;
+
+/* fill_icon */
+background: #222222;
+
+
+/* ALIF | alif123 */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 113px;
+top: 564px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Profile Akun */
+
+position: absolute;
+width: 188px;
+height: 33px;
+left: 147px;
+top: 674px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #FFFFFF;
+
+
+
+/* Atur Alamat */
+
+position: absolute;
+width: 265px;
+height: 33px;
+left: 147px;
+top: 726px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #FFFFFF;
+
+
+
+/* Riwayat Pembelian */
+
+position: absolute;
+width: 322px;
+height: 33px;
+left: 147px;
+top: 778px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #FFFFFF;
+
+
+
+/* Ubah Password */
+
+position: absolute;
+width: 265px;
+height: 33px;
+left: 147px;
+top: 830px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #FFFFFF;
+
+
+
+/* Keluar */
+
+position: absolute;
+width: 322px;
+height: 33px;
+left: 147px;
+top: 882px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #FFFFFF;
+
+
+
+/* Tentang Kami */
+
+position: relative;
+width: 1440px;
+height: 2584px;
+
+background: #FFFFFF;
+
+
+/* pop_out-removebg-preview 1 */
+
+position: absolute;
+width: 776.56px;
+height: 447.29px;
+left: 353px;
+top: 183px;
+
+background: url(pop_out-removebg-preview.png);
+opacity: 0.2;
+border-radius: 44px;
+transform: rotate(174.95deg);
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFFFF;
+
+
+/* CONTACT US */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 534px;
+top: 234px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 96px;
+
+color: #000000;
+
+border: 1px solid #FFFFFF;
+
+
+/* Hubungi Kami untuk Informasi Produk & Pemesanan */
+
+position: absolute;
+width: 1041px;
+height: 60px;
+left: 234px;
+top: 345px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+color: #000000;
+
+border: 1px solid #B5B5B5;
+
+
+/* Rectangle 85 */
+
+position: absolute;
+width: 125px;
+height: 15px;
+left: 693px;
+top: 435px;
+
+background: #A20202;
+
+
+/* Rectangle 87 */
+
+position: absolute;
+width: 125px;
+height: 15px;
+left: 836px;
+top: 435px;
+
+background: #E18A8A;
+
+
+/* Rectangle 86 */
+
+position: absolute;
+width: 125px;
+height: 15px;
+left: 550px;
+top: 435px;
+
+background: #E18A8A;
+
+
+/* Rectangle 4165 */
+
+position: absolute;
+width: 180px;
+height: 15px;
+left: 604px;
+top: 1870px;
+
+background: #A20202;
+
+
+/* Rectangle 4166 */
+
+position: absolute;
+width: 147px;
+height: 15px;
+left: 802px;
+top: 1870px;
+
+background: #E18A8A;
+
+
+/* Rectangle 4167 */
+
+position: absolute;
+width: 125px;
+height: 15px;
+left: 466px;
+top: 1870px;
+
+background: #E18A8A;
+
+
+/* Rectangle 88 */
+
+position: absolute;
+width: 629px;
+height: 720px;
+left: 47px;
+top: 636px;
+
+background: #D9D9D9;
+border-radius: 60px;
+
+
+/* Rectangle 89 */
+
+position: absolute;
+width: 745px;
+height: 1089px;
+left: 46px;
+top: 636px;
+
+background: #FFFFFF;
+box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 60px;
+
+
+/* Rectangle 97 */
+
+position: absolute;
+width: 563px;
+height: 1089px;
+left: 836px;
+top: 636px;
+
+background: #FFFFFF;
+box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 60px;
+
+
+/* Phone_fill */
+
+position: absolute;
+width: 71px;
+height: 72px;
+left: 890px;
+top: 1204px;
+
+box-shadow: inset 0px 8px 8px rgba(0, 0, 0, 0.25);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+/* Vector 189 */
+
+position: absolute;
+width: 47px;
+height: 47px;
+left: 12px;
+top: 12px;
+
+background: #A20202;
+
+
+/* Shop */
+
+position: absolute;
+width: 71px;
+height: 67px;
+left: 890px;
+top: 943px;
+
+box-shadow: inset 0px 8px 8px rgba(0, 0, 0, 0.25);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+/* Vector 3 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 39.58%;
+right: 39.58%;
+top: 62.5%;
+bottom: 12.5%;
+
+border: 2px solid #A20202;
+border-radius: 1px;
+
+
+/* Rectangle 42 */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 45.83%;
+bottom: 12.5%;
+
+border: 2px solid #A20202;
+border-radius: 2px;
+
+
+/* Rectangle 43 */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 54.17%;
+
+border: 2px solid #A20202;
+
+
+/* Kirim Pesan */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 102px;
+top: 666px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 96px;
+
+color: #000000;
+
+border: 1px solid #FFFFFF;
+
+
+/* Informasi Perusahaan */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 877px;
+top: 669px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 96px;
+
+color: #000000;
+
+border: 1px solid #FFFFFF;
+
+
+/* Rectangle 90 */
+
+position: absolute;
+width: 125px;
+height: 15px;
+left: 102px;
+top: 777px;
+
+background: #A20202;
+
+
+/* Rectangle 91 */
+
+position: absolute;
+width: 125px;
+height: 15px;
+left: 245px;
+top: 777px;
+
+background: #E18A8A;
+
+
+/* Rectangle 4162 */
+
+position: absolute;
+width: 191px;
+height: 15px;
+left: 890px;
+top: 879px;
+
+background: #C4B7B7;
+
+
+/* Rectangle 92 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 640px;
+height: 83px;
+left: 99px;
+top: 860px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+border-radius: 20px;
+
+
+/* Rectangle 93 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 640px;
+height: 83px;
+left: 102px;
+top: 973px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+border-radius: 20px;
+
+
+/* Rectangle 94 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 640px;
+height: 83px;
+left: 102px;
+top: 1086px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+border-radius: 20px;
+
+
+/* Rectangle 95 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 304px;
+height: 83px;
+left: 438px;
+top: 1199px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+border-radius: 20px;
+
+
+/* Rectangle 96 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 637px;
+height: 238px;
+left: 102px;
+top: 1312px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+border-radius: 50px;
+
+
+/* User_alt */
+
+position: absolute;
+width: 46px;
+height: 45px;
+left: 119px;
+top: 879px;
+
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 33.33%;
+right: 33.33%;
+top: 12.5%;
+bottom: 54.17%;
+
+/* Line_icon */
+border: 2px solid #33363F;
+
+
+/* Rectangle 4160 */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 58.33%;
+bottom: 12.5%;
+
+/* Line_icon */
+border: 2px solid #33363F;
+
+
+/* Message */
+
+position: absolute;
+width: 50px;
+height: 43px;
+left: 119px;
+top: 994px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 25%;
+bottom: 25%;
+
+/* Line_icon */
+border: 2px solid #33363F;
+border-radius: 2px;
+
+
+/* Vector 3 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 37.5%;
+bottom: 45.83%;
+
+/* Line_icon */
+border: 2px solid #33363F;
+border-radius: 2px;
+
+
+/* Phone */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 126px;
+top: 1117px;
+
+
+
+/* Vector 189 */
+
+position: absolute;
+width: 32px;
+height: 31px;
+left: 0px;
+top: -4px;
+
+/* Line_icon */
+border: 2px solid #33363F;
+
+
+/* Arrow_drop_down */
+
+position: absolute;
+width: 39px;
+height: 39px;
+left: 694px;
+top: 1221px;
+
+
+
+/* Vector 10 */
+
+position: absolute;
+left: 29.17%;
+right: 45.83%;
+top: 37.5%;
+bottom: 20.83%;
+
+/* fill_icon */
+background: #222222;
+transform: rotate(-90deg);
+
+
+/* Nama Lengkap */
+
+position: absolute;
+width: 190px;
+height: 38px;
+left: 186px;
+top: 884px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+opacity: 0.6;
+border: 1px solid #B5B5B5;
+
+
+/* Email */
+
+position: absolute;
+width: 68px;
+height: 38px;
+left: 186px;
+top: 996px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+opacity: 0.6;
+border: 1px solid #B5B5B5;
+
+
+/* Nomor What’sApp */
+
+position: absolute;
+width: 227px;
+height: 38px;
+left: 186px;
+top: 1109px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+opacity: 0.6;
+border: 1px solid #B5B5B5;
+
+
+/* Pilih Subjek */
+
+position: absolute;
+width: 138px;
+height: 38px;
+left: 466px;
+top: 1222px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+opacity: 0.6;
+border: 1px solid #B5B5B5;
+
+
+/* Pesan Anda */
+
+position: absolute;
+width: 180px;
+height: 45px;
+left: 161px;
+top: 1323px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+
+color: #000000;
+
+opacity: 0.6;
+border: 1px solid #B5B5B5;
+
+
+/* Subjek Pesan */
+
+position: absolute;
+width: 231px;
+height: 53px;
+left: 127px;
+top: 1209px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 52px;
+/* identical to box height */
+
+color: #000000;
+
+border: 1px solid #B5B5B5;
+
+
+/* Asian Bearindo Jaya */
+
+position: absolute;
+width: 256px;
+height: 38px;
+left: 992px;
+top: 949px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+border: 1px solid #B5B5B5;
+
+
+/* +62 812-3456-7890 */
+
+position: absolute;
+width: 243px;
+height: 38px;
+left: 992px;
+top: 1217px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+border: 1px solid #B5B5B5;
+
+
+/* Senin - jumat */
+
+position: absolute;
+width: 182px;
+height: 38px;
+left: 992px;
+top: 1445px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+border: 1px solid #B5B5B5;
+
+
+/* 08.00 - 17.00 */
+
+position: absolute;
+width: 192px;
+height: 45px;
+left: 992px;
+top: 1490px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height */
+
+color: #000000;
+
+border: 1px solid #B5B5B5;
+
+
+/* admin@asianbearindo.com */
+
+position: absolute;
+width: 352px;
+height: 38px;
+left: 986px;
+top: 1340px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+text-decoration-line: underline;
+
+color: #000000;
+
+border: 1px solid #B5B5B5;
+
+
+/* Jl. Tanjungsari no. 19, Sukomanunggal Surabaya Jawa Timur */
+
+position: absolute;
+width: 342px;
+height: 114px;
+left: 992px;
+top: 1049px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 38px;
+
+color: #000000;
+
+border: 1px solid #B5B5B5;
+
+
+/* Tulis pesan di sini. . . */
+
+position: absolute;
+width: 247px;
+height: 38px;
+left: 161px;
+top: 1382px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+opacity: 0.6;
+border: 1px solid #B5B5B5;
+
+
+/* Rectangle 4161 */
+
+position: absolute;
+width: 508px;
+height: 121px;
+left: 154px;
+top: 1577px;
+
+background: #A20202;
+border-radius: 30px;
+
+
+/* Rectangle 4163 */
+
+position: absolute;
+width: 508px;
+height: 121px;
+left: 864px;
+top: 1577px;
+
+background: #DEDEDE;
+border-radius: 30px;
+
+
+/* Kirim Pesan */
+
+position: absolute;
+width: 232px;
+height: 60px;
+left: 323px;
+top: 1608px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Send_fill */
+
+position: absolute;
+width: 53px;
+height: 50px;
+left: 258px;
+top: 1614px;
+
+
+
+/* Subtract */
+
+position: absolute;
+width: 36.73px;
+height: 34.86px;
+left: 6.75px;
+top: 8.97px;
+
+background: #FFFFFF;
+
+
+/* Vector 121 */
+
+position: absolute;
+left: 8.33%;
+right: 16.67%;
+top: 16.67%;
+bottom: 8.33%;
+
+/* Line_icon */
+background: #33363F;
+border-radius: 1px;
+
+
+/* Vector 122 */
+
+position: absolute;
+left: 33.33%;
+right: 37.5%;
+top: 37.5%;
+bottom: 33.33%;
+
+/* Line_icon */
+border: 2px solid #33363F;
+border-radius: 2px;
+
+
+/* Frame 5 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 460px;
+top: 1699px;
+
+
+
+/* Pin_alt_fill */
+
+position: absolute;
+width: 71px;
+height: 72px;
+left: 890px;
+top: 1074px;
+
+box-shadow: inset 0px 8px 8px rgba(0, 0, 0, 0.25);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+/* Subtract */
+
+position: absolute;
+width: 41.42px;
+height: 47.91px;
+left: 14.79px;
+top: 6px;
+
+background: #A20202;
+
+
+/* Ellipse 4 */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 8.33%;
+bottom: 25%;
+
+background: #273B4A;
+
+
+/* Ellipse 5 */
+
+position: absolute;
+left: 37.5%;
+right: 37.5%;
+top: 25%;
+bottom: 50%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 40 */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 62.5%;
+bottom: 12.5%;
+
+border: 2px solid #A20202;
+
+
+/* Message_fill */
+
+position: absolute;
+width: 69px;
+height: 69px;
+left: 890px;
+top: 1330px;
+
+box-shadow: inset 0px 8px 8px rgba(0, 0, 0, 0.25);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+/* Subtract */
+
+position: absolute;
+width: 51.75px;
+height: 40.25px;
+left: 8.62px;
+top: 14.38px;
+
+background: #A20202;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 20.83%;
+bottom: 20.83%;
+
+background: #273B4A;
+border-radius: 3px;
+
+
+/* Vector 3 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 37.5%;
+bottom: 45.83%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Message_fill */
+
+position: absolute;
+width: 69px;
+height: 69px;
+left: 970px;
+top: 1603px;
+
+box-shadow: inset 0px 8px 8px rgba(0, 0, 0, 0.25);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+/* Subtract */
+
+position: absolute;
+width: 51.75px;
+height: 40.25px;
+left: 8.62px;
+top: 14.38px;
+
+background: #000000;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 20.83%;
+bottom: 20.83%;
+
+background: #273B4A;
+border-radius: 3px;
+
+
+/* Vector 3 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 37.5%;
+bottom: 45.83%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Tumer_fill */
+
+position: absolute;
+width: 69px;
+height: 65px;
+left: 890px;
+top: 1457px;
+
+box-shadow: inset 0px 8px 8px rgba(0, 0, 0, 0.25);
+filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
+
+
+/* Subtract */
+
+position: absolute;
+width: 51.75px;
+height: 48.75px;
+left: 8.62px;
+top: 13.54px;
+
+background: #A20202;
+
+
+/* Ellipse 54 */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 20.83%;
+bottom: 4.17%;
+
+/* Line_icon */
+background: #33363F;
+
+
+/* Ellipse 55 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 29.17%;
+bottom: 12.5%;
+
+/* Line_icon */
+border: 2px solid #33363F;
+
+
+/* Vector 64 */
+
+position: absolute;
+left: 50%;
+right: 50%;
+top: 45.83%;
+bottom: 41.67%;
+
+/* Line_icon */
+border: 2px solid #33363F;
+
+
+/* Vector 65 */
+
+position: absolute;
+left: 72.92%;
+right: 20.83%;
+top: 25%;
+bottom: 68.75%;
+
+border: 2px solid #A20202;
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 8.33%;
+bottom: 87.5%;
+
+border: 2px solid #A20202;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Email Kami */
+
+position: absolute;
+width: 204px;
+height: 53px;
+left: 1062px;
+top: 1611px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 52px;
+/* identical to box height */
+
+color: #000000;
+
+border: 1px solid #B5B5B5;
+
+
+/* Group 28 */
+
+position: absolute;
+width: 574px;
+height: 107px;
+left: 433px;
+top: 1752px;
+
+
+
+/* Lokasi Kami */
+
+position: absolute;
+width: 444px;
+height: 50.78px;
+left: 563px;
+top: 1761.97px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 96px;
+
+color: #000000;
+
+border: 1px solid #FFFFFF;
+
+
+/* Pin_fill */
+
+position: absolute;
+width: 116px;
+height: 107px;
+left: 433px;
+top: 1752px;
+
+
+
+/* Subtract */
+
+position: absolute;
+width: 67.67px;
+height: 71.25px;
+left: 24.17px;
+top: 17.83px;
+
+background: #A20202;
+
+
+/* Ellipse 4 */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 16.67%;
+bottom: 16.67%;
+
+background: #273B4A;
+
+
+/* Ellipse 5 */
+
+position: absolute;
+left: 37.5%;
+right: 37.5%;
+top: 33.33%;
+bottom: 41.67%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 4164 */
+
+position: absolute;
+width: 1288px;
+height: 610px;
+left: 78px;
+top: 1897px;
+
+background: url(Screenshot 2026-02-24 044225.png);
+border-radius: 80px;
+
+
+/* Kerjanjang */
+
+position: relative;
+width: 1440px;
+height: 722px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFFFF;
+
+
+/* KERANJANG SAYA */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 104px;
+top: 239px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Rectangle 72 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 91px;
+top: 361px;
+
+border: 8px solid #000000;
+border-radius: 60px;
+
+
+/* Rectangle 73 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 238px;
+height: 155px;
+left: 128px;
+top: 400px;
+
+background: url(g1.jpg);
+border: 2px solid #000000;
+border-radius: 50px;
+
+
+/* Bearing 6201 2RS */
+
+position: absolute;
+width: 273px;
+height: 48px;
+left: 386px;
+top: 400px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* IDR */
+
+position: absolute;
+width: 26px;
+height: 23px;
+left: 386px;
+top: 444px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* QUANTITY */
+
+position: absolute;
+width: 77px;
+height: 23px;
+left: 386px;
+top: 502px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* 10.000 */
+
+position: absolute;
+width: 82px;
+height: 38px;
+left: 412px;
+top: 456px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 1 */
+
+position: absolute;
+width: 10px;
+height: 38px;
+left: 420px;
+top: 525px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 74 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 54px;
+height: 34px;
+left: 398px;
+top: 527px;
+
+border: 1px solid #000000;
+border-radius: 20px;
+
+
+/* Group 15 */
+
+position: absolute;
+width: 565px;
+height: 82px;
+left: 798px;
+top: 420px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 565px;
+height: 82px;
+left: 798px;
+top: 420px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* LANJUTKAN PEMBAYARAN */
+
+position: absolute;
+width: 425px;
+height: 48px;
+left: 868px;
+top: 437px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Cek Ongkir */
+
+position: relative;
+width: 1440px;
+height: 1327px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFFFF;
+
+
+/* TUJUAN PENGIRIMAN */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 104px;
+top: 239px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Pilih Kota Atau Kabupaten Tujuan */
+
+position: absolute;
+width: 559px;
+height: 56px;
+left: 103px;
+top: 333px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #000000;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 639px;
+height: 91px;
+left: 104px;
+top: 389px;
+
+background: #D9D9D9;
+
+
+/* SURABAYA */
+
+position: absolute;
+width: 221px;
+height: 60px;
+left: 126px;
+top: 405px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+color: #717171;
+
+
+
+/* Nomor Telepon */
+
+position: absolute;
+width: 559px;
+height: 56px;
+left: 103px;
+top: 515px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #000000;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 639px;
+height: 91px;
+left: 104px;
+top: 571px;
+
+background: #D9D9D9;
+
+
+/* +62 812 3456 7890 */
+
+position: absolute;
+width: 364px;
+height: 60px;
+left: 126px;
+top: 587px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+color: #717171;
+
+
+
+/* Alamat Tujuan */
+
+position: absolute;
+width: 559px;
+height: 56px;
+left: 103px;
+top: 678px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #000000;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 639px;
+height: 231px;
+left: 104px;
+top: 734px;
+
+background: #D9D9D9;
+
+
+/* Jl. Tambak Mayor Barat I, Asemrowo, Surabaya, Jawa Timur */
+
+position: absolute;
+width: 604px;
+height: 192px;
+left: 126px;
+top: 750px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+
+color: #717171;
+
+
+
+/* Group 16 */
+
+position: absolute;
+width: 263px;
+height: 82px;
+left: 487px;
+top: 1043px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 263px;
+height: 82px;
+left: 487px;
+top: 1043px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* CEK ONGKIR */
+
+position: absolute;
+width: 197px;
+height: 48px;
+left: 520px;
+top: 1060px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 1055px;
+height: 21px;
+left: 866px;
+top: 239px;
+
+background: #000000;
+transform: rotate(-90deg);
+
+
+/* Alamat Pengiriman */
+
+position: absolute;
+width: 311px;
+height: 56px;
+left: 1001px;
+top: 338px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Ongkir */
+
+position: relative;
+width: 1440px;
+height: 1327px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFFFF;
+
+
+/* TUJUAN PENGIRIMAN */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 104px;
+top: 239px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Pilih Kota Atau Kabupaten Tujuan */
+
+position: absolute;
+width: 559px;
+height: 56px;
+left: 103px;
+top: 333px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #000000;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 639px;
+height: 91px;
+left: 104px;
+top: 389px;
+
+background: #D9D9D9;
+
+
+/* SURABAYA */
+
+position: absolute;
+width: 221px;
+height: 60px;
+left: 126px;
+top: 405px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+color: #717171;
+
+
+
+/* Nomor Telepon */
+
+position: absolute;
+width: 559px;
+height: 56px;
+left: 103px;
+top: 515px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #000000;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 639px;
+height: 91px;
+left: 104px;
+top: 571px;
+
+background: #D9D9D9;
+
+
+/* +62 812 3456 7890 */
+
+position: absolute;
+width: 364px;
+height: 60px;
+left: 126px;
+top: 587px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+color: #717171;
+
+
+
+/* Alamat Tujuan */
+
+position: absolute;
+width: 559px;
+height: 56px;
+left: 103px;
+top: 678px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+
+color: #000000;
+
+
+
+/* Alamat Pengiriman */
+
+position: absolute;
+width: 363px;
+height: 56px;
+left: 1011px;
+top: 328px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 52px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 639px;
+height: 231px;
+left: 104px;
+top: 734px;
+
+background: #D9D9D9;
+
+
+/* Jl. Tambak Mayor Barat I, Asemrowo, Surabaya, Jawa Timur */
+
+position: absolute;
+width: 604px;
+height: 192px;
+left: 126px;
+top: 750px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+
+color: #717171;
+
+
+
+/* Jl. Tambak Mayor Barat I, Asemrowo, Surabaya, Jawa Timur */
+
+position: absolute;
+width: 327px;
+height: 192px;
+left: 1011px;
+top: 399px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+
+color: #717171;
+
+
+
+/* Group 17 */
+
+position: absolute;
+width: 373px;
+height: 60px;
+left: 1011px;
+top: 632px;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 353px;
+height: 60px;
+left: 1011px;
+top: 632px;
+
+background: #395697;
+border-radius: 20px;
+
+
+/* Biaya Ongkir 12.000 */
+
+position: absolute;
+width: 365px;
+height: 38px;
+left: 1019px;
+top: 643px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Group 16 */
+
+position: absolute;
+width: 263px;
+height: 82px;
+left: 487px;
+top: 1043px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 263px;
+height: 82px;
+left: 487px;
+top: 1043px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* CEK ONGKIR */
+
+position: absolute;
+width: 197px;
+height: 48px;
+left: 520px;
+top: 1060px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Group 18 */
+
+position: absolute;
+width: 212px;
+height: 82px;
+left: 1172px;
+top: 887px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 212px;
+height: 82px;
+left: 1172px;
+top: 887px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* SIMPAN */
+
+position: absolute;
+width: 132px;
+height: 48px;
+left: 1212px;
+top: 904px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 69 */
+
+position: absolute;
+width: 1055px;
+height: 21px;
+left: 866px;
+top: 239px;
+
+background: #000000;
+transform: rotate(-90deg);
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 363px;
+height: 21px;
+left: 1011px;
+top: 560px;
+
+background: #000000;
+transform: rotate(-180deg);
+
+
+/* Kerjanjang */
+
+position: relative;
+width: 1440px;
+height: 743px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFFFF;
+
+
+/* KERANJANG SAYA */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 104px;
+top: 239px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Alamat Pengiriman */
+
+position: absolute;
+width: 363px;
+height: 56px;
+left: 990px;
+top: 312px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 52px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Jl. Tambak Mayor Barat I, Asemrowo, Surabaya, Jawa Timur */
+
+position: absolute;
+width: 403px;
+height: 192px;
+left: 968px;
+top: 399px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+
+color: #717171;
+
+
+
+/* Group 22 */
+
+position: absolute;
+width: 437px;
+height: 82px;
+left: 934px;
+top: 550px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 437px;
+height: 82px;
+left: 934px;
+top: 550px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* METODE PEMBAYARAN */
+
+position: absolute;
+width: 390px;
+height: 48px;
+left: 975px;
+top: 567px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 69 */
+
+position: absolute;
+width: 1055px;
+height: 21px;
+left: 866px;
+top: 239px;
+
+background: #000000;
+transform: rotate(-90deg);
+
+
+/* Group 21 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Group 20 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Group 19 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Rectangle 75 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+border: 8px solid #000000;
+border-radius: 60px;
+
+
+/* Rectangle 76 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 238px;
+height: 155px;
+left: 135px;
+top: 379px;
+
+background: url(g1.jpg);
+border: 2px solid #000000;
+border-radius: 50px;
+
+
+/* Bearing 6201 2RS */
+
+position: absolute;
+width: 273px;
+height: 48px;
+left: 393px;
+top: 379px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* IDR */
+
+position: absolute;
+width: 26px;
+height: 23px;
+left: 393px;
+top: 423px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* QUANTITY */
+
+position: absolute;
+width: 77px;
+height: 23px;
+left: 393px;
+top: 481px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* 1 */
+
+position: absolute;
+width: 10px;
+height: 38px;
+left: 427px;
+top: 504px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 77 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 54px;
+height: 34px;
+left: 405px;
+top: 506px;
+
+border: 1px solid #000000;
+border-radius: 20px;
+
+
+/* Kerjanjang */
+
+position: relative;
+width: 1440px;
+height: 1350px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFFFF;
+
+
+/* KERANJANG SAYA */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 104px;
+top: 239px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Alamat Pengiriman */
+
+position: absolute;
+width: 363px;
+height: 56px;
+left: 990px;
+top: 312px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 52px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Jl. Tambak Mayor Barat I, Asemrowo, Surabaya, Jawa Timur */
+
+position: absolute;
+width: 403px;
+height: 192px;
+left: 968px;
+top: 399px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+
+color: #717171;
+
+
+
+/* Group 22 */
+
+position: absolute;
+width: 437px;
+height: 82px;
+left: 934px;
+top: 550px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 437px;
+height: 82px;
+left: 934px;
+top: 550px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* METODE PEMBAYARAN */
+
+position: absolute;
+width: 390px;
+height: 48px;
+left: 975px;
+top: 567px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 69 */
+
+position: absolute;
+width: 1055px;
+height: 21px;
+left: 866px;
+top: 239px;
+
+background: #000000;
+transform: rotate(-90deg);
+
+
+/* Group 21 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Group 20 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Group 19 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Rectangle 75 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+border: 8px solid #000000;
+border-radius: 60px;
+
+
+/* Rectangle 76 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 238px;
+height: 155px;
+left: 135px;
+top: 379px;
+
+background: url(g1.jpg);
+border: 2px solid #000000;
+border-radius: 50px;
+
+
+/* Bearing 6201 2RS */
+
+position: absolute;
+width: 273px;
+height: 48px;
+left: 393px;
+top: 379px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* IDR */
+
+position: absolute;
+width: 26px;
+height: 23px;
+left: 393px;
+top: 423px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* QUANTITY */
+
+position: absolute;
+width: 77px;
+height: 23px;
+left: 393px;
+top: 481px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* 5.000 */
+
+position: absolute;
+width: 73px;
+height: 38px;
+left: 419px;
+top: 435px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 1 */
+
+position: absolute;
+width: 10px;
+height: 38px;
+left: 427px;
+top: 504px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 77 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 54px;
+height: 34px;
+left: 405px;
+top: 506px;
+
+border: 1px solid #000000;
+border-radius: 20px;
+
+
+/* Group 23 */
+
+position: absolute;
+width: 758px;
+height: 814px;
+left: 341px;
+top: 399px;
+
+
+
+/* Rectangle 78 */
+
+position: absolute;
+width: 758px;
+height: 814px;
+left: 341px;
+top: 399px;
+
+background: #EFEDED;
+border-radius: 80px;
+
+
+/* METODE PEMBAYARAN */
+
+position: absolute;
+width: 476px;
+height: 56px;
+left: 482px;
+top: 482px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Ellipse 171 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 83px;
+height: 78px;
+left: 415px;
+top: 756px;
+
+border: 10px solid #395697;
+
+
+/* Ellipse 172 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 83px;
+height: 78px;
+left: 415px;
+top: 865px;
+
+border: 10px solid #395697;
+
+
+/* Transfer Bank BCA */
+
+position: absolute;
+width: 306px;
+height: 48px;
+left: 531px;
+top: 658px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Debit / Kredit */
+
+position: absolute;
+width: 216px;
+height: 48px;
+left: 533px;
+top: 771px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Cash Tunai */
+
+position: absolute;
+width: 186px;
+height: 48px;
+left: 533px;
+top: 882px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Intersect */
+
+position: absolute;
+width: 83px;
+height: 78px;
+left: 415px;
+top: 647px;
+
+
+
+/* Intersect */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Ellipse 170 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 10px solid #395697;
+
+
+/* Kerjanjang */
+
+position: relative;
+width: 1440px;
+height: 1350px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFFFF;
+
+
+/* KERANJANG SAYA */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 104px;
+top: 239px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Alamat Pengiriman */
+
+position: absolute;
+width: 363px;
+height: 56px;
+left: 990px;
+top: 312px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 52px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Jl. Tambak Mayor Barat I, Asemrowo, Surabaya, Jawa Timur */
+
+position: absolute;
+width: 403px;
+height: 192px;
+left: 968px;
+top: 399px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+
+color: #717171;
+
+
+
+/* Group 22 */
+
+position: absolute;
+width: 437px;
+height: 82px;
+left: 934px;
+top: 550px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 437px;
+height: 82px;
+left: 934px;
+top: 550px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* METODE PEMBAYARAN */
+
+position: absolute;
+width: 390px;
+height: 48px;
+left: 975px;
+top: 567px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 69 */
+
+position: absolute;
+width: 1055px;
+height: 21px;
+left: 866px;
+top: 239px;
+
+background: #000000;
+transform: rotate(-90deg);
+
+
+/* Group 21 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Group 20 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Group 19 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Rectangle 75 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+border: 8px solid #000000;
+border-radius: 60px;
+
+
+/* Rectangle 76 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 238px;
+height: 155px;
+left: 135px;
+top: 379px;
+
+background: url(g1.jpg);
+border: 2px solid #000000;
+border-radius: 50px;
+
+
+/* Bearing 6201 2RS */
+
+position: absolute;
+width: 273px;
+height: 48px;
+left: 393px;
+top: 379px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* IDR */
+
+position: absolute;
+width: 26px;
+height: 23px;
+left: 393px;
+top: 423px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* QUANTITY */
+
+position: absolute;
+width: 77px;
+height: 23px;
+left: 393px;
+top: 481px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* 5.000 */
+
+position: absolute;
+width: 73px;
+height: 38px;
+left: 419px;
+top: 435px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 1 */
+
+position: absolute;
+width: 10px;
+height: 38px;
+left: 427px;
+top: 504px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 77 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 54px;
+height: 34px;
+left: 405px;
+top: 506px;
+
+border: 1px solid #000000;
+border-radius: 20px;
+
+
+/* Group 23 */
+
+position: absolute;
+width: 758px;
+height: 814px;
+left: 341px;
+top: 399px;
+
+
+
+/* Rectangle 78 */
+
+position: absolute;
+width: 758px;
+height: 814px;
+left: 341px;
+top: 399px;
+
+background: #EFEDED;
+border-radius: 80px;
+
+
+/* METODE PEMBAYARAN */
+
+position: absolute;
+width: 476px;
+height: 56px;
+left: 482px;
+top: 482px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Ellipse 171 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 83px;
+height: 78px;
+left: 415px;
+top: 756px;
+
+border: 10px solid #395697;
+
+
+/* Ellipse 172 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 83px;
+height: 78px;
+left: 415px;
+top: 865px;
+
+border: 10px solid #395697;
+
+
+/* Transfer Bank BCA */
+
+position: absolute;
+width: 306px;
+height: 48px;
+left: 531px;
+top: 658px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Debit / Kredit */
+
+position: absolute;
+width: 216px;
+height: 48px;
+left: 533px;
+top: 771px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Cash Tunai */
+
+position: absolute;
+width: 186px;
+height: 48px;
+left: 533px;
+top: 882px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Intersect */
+
+position: absolute;
+width: 83px;
+height: 78px;
+left: 415px;
+top: 647px;
+
+
+
+/* Intersect */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Ellipse 170 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 10px solid #395697;
+
+
+/* Group 18 */
+
+position: absolute;
+width: 212px;
+height: 82px;
+left: 614px;
+top: 1023px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 212px;
+height: 82px;
+left: 614px;
+top: 1023px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* SIMPAN */
+
+position: absolute;
+width: 132px;
+height: 48px;
+left: 654px;
+top: 1040px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Done_ring_round_fill */
+
+position: absolute;
+width: 86px;
+height: 81px;
+left: 414px;
+top: 647px;
+
+
+
+/* Subtract */
+
+position: absolute;
+width: 64.5px;
+height: 60.75px;
+left: 10.75px;
+top: 10.12px;
+
+/* fill_icon */
+background: #222222;
+
+
+/* Ellipse 47 */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Line_icon */
+background: #33363F;
+border-radius: 2px;
+
+
+/* Line 1 */
+
+position: absolute;
+left: 29.17%;
+right: 31.59%;
+top: 20.83%;
+bottom: 21.66%;
+
+/* fill_icon */
+border: 2px solid #222222;
+transform: rotate(90deg);
+
+
+/* Kerjanjang */
+
+position: relative;
+width: 1440px;
+height: 1350px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFFFF;
+
+
+/* KERANJANG SAYA */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 104px;
+top: 239px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Alamat Pengiriman */
+
+position: absolute;
+width: 363px;
+height: 56px;
+left: 990px;
+top: 312px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 52px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Jl. Tambak Mayor Barat I, Asemrowo, Surabaya, Jawa Timur */
+
+position: absolute;
+width: 403px;
+height: 192px;
+left: 968px;
+top: 399px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+
+color: #717171;
+
+
+
+/* Group 22 */
+
+position: absolute;
+width: 437px;
+height: 82px;
+left: 934px;
+top: 550px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 437px;
+height: 82px;
+left: 934px;
+top: 550px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* METODE PEMBAYARAN */
+
+position: absolute;
+width: 390px;
+height: 48px;
+left: 975px;
+top: 567px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 69 */
+
+position: absolute;
+width: 1055px;
+height: 21px;
+left: 866px;
+top: 239px;
+
+background: #000000;
+transform: rotate(-90deg);
+
+
+/* Group 21 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Group 20 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Group 19 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Rectangle 75 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+border: 8px solid #000000;
+border-radius: 60px;
+
+
+/* Rectangle 76 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 238px;
+height: 155px;
+left: 135px;
+top: 379px;
+
+background: url(g1.jpg);
+border: 2px solid #000000;
+border-radius: 50px;
+
+
+/* Bearing 6201 2RS */
+
+position: absolute;
+width: 273px;
+height: 48px;
+left: 393px;
+top: 379px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* IDR */
+
+position: absolute;
+width: 26px;
+height: 23px;
+left: 393px;
+top: 423px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* QUANTITY */
+
+position: absolute;
+width: 77px;
+height: 23px;
+left: 393px;
+top: 481px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* 5.000 */
+
+position: absolute;
+width: 73px;
+height: 38px;
+left: 419px;
+top: 435px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 1 */
+
+position: absolute;
+width: 10px;
+height: 38px;
+left: 427px;
+top: 504px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 77 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 54px;
+height: 34px;
+left: 405px;
+top: 506px;
+
+border: 1px solid #000000;
+border-radius: 20px;
+
+
+/* Group 23 */
+
+position: absolute;
+width: 758px;
+height: 814px;
+left: 341px;
+top: 399px;
+
+
+
+/* Rectangle 78 */
+
+position: absolute;
+width: 758px;
+height: 814px;
+left: 341px;
+top: 399px;
+
+background: #EFEDED;
+border-radius: 80px;
+
+
+/* METODE PEMBAYARAN */
+
+position: absolute;
+width: 476px;
+height: 56px;
+left: 482px;
+top: 482px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Ellipse 171 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 83px;
+height: 78px;
+left: 415px;
+top: 756px;
+
+border: 10px solid #395697;
+
+
+/* Ellipse 172 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 83px;
+height: 78px;
+left: 415px;
+top: 865px;
+
+border: 10px solid #395697;
+
+
+/* Transfer Bank BCA */
+
+position: absolute;
+width: 306px;
+height: 48px;
+left: 531px;
+top: 658px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Debit / Kredit */
+
+position: absolute;
+width: 216px;
+height: 48px;
+left: 533px;
+top: 771px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Cash Tunai */
+
+position: absolute;
+width: 186px;
+height: 48px;
+left: 533px;
+top: 882px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Intersect */
+
+position: absolute;
+width: 83px;
+height: 78px;
+left: 415px;
+top: 647px;
+
+
+
+/* Intersect */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Ellipse 170 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 10px solid #395697;
+
+
+/* Group 19 */
+
+position: absolute;
+width: 212px;
+height: 82px;
+left: 613px;
+top: 1037px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 212px;
+height: 82px;
+left: 613px;
+top: 1037px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* SIMPAN */
+
+position: absolute;
+width: 132px;
+height: 48px;
+left: 653px;
+top: 1054px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Done_ring_round_fill */
+
+position: absolute;
+width: 86px;
+height: 81px;
+left: 414px;
+top: 756px;
+
+
+
+/* Subtract */
+
+position: absolute;
+width: 64.5px;
+height: 60.75px;
+left: 10.75px;
+top: 10.12px;
+
+/* fill_icon */
+background: #222222;
+
+
+/* Ellipse 47 */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Line_icon */
+background: #33363F;
+border-radius: 2px;
+
+
+/* Line 1 */
+
+position: absolute;
+left: 29.17%;
+right: 31.59%;
+top: 20.83%;
+bottom: 21.66%;
+
+/* fill_icon */
+border: 2px solid #222222;
+transform: rotate(90deg);
+
+
+/* Kerjanjang */
+
+position: relative;
+width: 1440px;
+height: 1350px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFFFF;
+
+
+/* KERANJANG SAYA */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 104px;
+top: 239px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Alamat Pengiriman */
+
+position: absolute;
+width: 363px;
+height: 56px;
+left: 990px;
+top: 312px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 52px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Jl. Tambak Mayor Barat I, Asemrowo, Surabaya, Jawa Timur */
+
+position: absolute;
+width: 403px;
+height: 192px;
+left: 968px;
+top: 399px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+
+color: #717171;
+
+
+
+/* Group 22 */
+
+position: absolute;
+width: 437px;
+height: 82px;
+left: 934px;
+top: 550px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 437px;
+height: 82px;
+left: 934px;
+top: 550px;
+
+background: #FFFFFF;
+border-radius: 50px;
+
+
+/* METODE PEMBAYARAN */
+
+position: absolute;
+width: 390px;
+height: 48px;
+left: 975px;
+top: 567px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 69 */
+
+position: absolute;
+width: 1055px;
+height: 21px;
+left: 866px;
+top: 239px;
+
+background: #000000;
+transform: rotate(-90deg);
+
+
+/* Group 21 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Group 20 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Group 19 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Rectangle 75 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+border: 8px solid #000000;
+border-radius: 60px;
+
+
+/* Rectangle 76 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 238px;
+height: 155px;
+left: 135px;
+top: 379px;
+
+background: url(g1.jpg);
+border: 2px solid #000000;
+border-radius: 50px;
+
+
+/* Bearing 6201 2RS */
+
+position: absolute;
+width: 273px;
+height: 48px;
+left: 393px;
+top: 379px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* IDR */
+
+position: absolute;
+width: 26px;
+height: 23px;
+left: 393px;
+top: 423px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* QUANTITY */
+
+position: absolute;
+width: 77px;
+height: 23px;
+left: 393px;
+top: 481px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* 5.000 */
+
+position: absolute;
+width: 73px;
+height: 38px;
+left: 419px;
+top: 435px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 1 */
+
+position: absolute;
+width: 10px;
+height: 38px;
+left: 427px;
+top: 504px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 77 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 54px;
+height: 34px;
+left: 405px;
+top: 506px;
+
+border: 1px solid #000000;
+border-radius: 20px;
+
+
+/* Group 23 */
+
+position: absolute;
+width: 758px;
+height: 814px;
+left: 340px;
+top: 399px;
+
+
+
+/* Rectangle 78 */
+
+position: absolute;
+width: 758px;
+height: 814px;
+left: 340px;
+top: 399px;
+
+background: #EFEDED;
+border-radius: 80px;
+
+
+/* METODE PEMBAYARAN */
+
+position: absolute;
+width: 476px;
+height: 56px;
+left: 481px;
+top: 482px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Ellipse 171 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 83px;
+height: 78px;
+left: 414px;
+top: 756px;
+
+border: 10px solid #395697;
+
+
+/* Ellipse 172 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 83px;
+height: 78px;
+left: 415px;
+top: 865px;
+
+border: 10px solid #395697;
+
+
+/* Transfer Bank BCA */
+
+position: absolute;
+width: 306px;
+height: 48px;
+left: 530px;
+top: 658px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Debit / Kredit */
+
+position: absolute;
+width: 216px;
+height: 48px;
+left: 532px;
+top: 771px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Cash Tunai */
+
+position: absolute;
+width: 186px;
+height: 48px;
+left: 532px;
+top: 882px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Intersect */
+
+position: absolute;
+width: 83px;
+height: 78px;
+left: 414px;
+top: 647px;
+
+
+
+/* Intersect */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #395697;
+
+
+/* Ellipse 170 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 10px solid #395697;
+
+
+/* Group 18 */
+
+position: absolute;
+width: 212px;
+height: 82px;
+left: 612px;
+top: 1035px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 212px;
+height: 82px;
+left: 612px;
+top: 1035px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* SIMPAN */
+
+position: absolute;
+width: 132px;
+height: 48px;
+left: 652px;
+top: 1052px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Done_ring_round_fill */
+
+position: absolute;
+width: 86px;
+height: 81px;
+left: 413px;
+top: 865px;
+
+
+
+/* Subtract */
+
+position: absolute;
+width: 64.5px;
+height: 60.75px;
+left: 10.75px;
+top: 10.12px;
+
+/* fill_icon */
+background: #222222;
+
+
+/* Ellipse 47 */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Line_icon */
+background: #33363F;
+border-radius: 2px;
+
+
+/* Line 1 */
+
+position: absolute;
+left: 29.17%;
+right: 31.59%;
+top: 20.83%;
+bottom: 21.66%;
+
+/* fill_icon */
+border: 2px solid #222222;
+transform: rotate(90deg);
+
+
+/* Kerjanjang */
+
+position: relative;
+width: 1440px;
+height: 743px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #500000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFFFF;
+
+
+/* KERANJANG SAYA */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 104px;
+top: 239px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Alamat Pengiriman */
+
+position: absolute;
+width: 363px;
+height: 56px;
+left: 990px;
+top: 312px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 52px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Jl. Tambak Mayor Barat I, Asemrowo, Surabaya, Jawa Timur */
+
+position: absolute;
+width: 403px;
+height: 192px;
+left: 968px;
+top: 399px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+
+color: #717171;
+
+
+
+/* Group 22 */
+
+position: absolute;
+width: 437px;
+height: 82px;
+left: 934px;
+top: 550px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 437px;
+height: 82px;
+left: 934px;
+top: 550px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* METODE PEMBAYARAN */
+
+position: absolute;
+width: 390px;
+height: 48px;
+left: 975px;
+top: 567px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 69 */
+
+position: absolute;
+width: 1055px;
+height: 21px;
+left: 866px;
+top: 239px;
+
+background: #000000;
+transform: rotate(-90deg);
+
+
+/* Group 21 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Group 20 */
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+
+
+/* Rectangle 75 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 98px;
+top: 340px;
+
+border: 8px solid #000000;
+border-radius: 60px;
+
+
+/* Bearing 6201 ZZ */
+
+position: absolute;
+width: 259px;
+height: 48px;
+left: 393px;
+top: 379px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* IDR */
+
+position: absolute;
+width: 26px;
+height: 23px;
+left: 393px;
+top: 423px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* QUANTITY */
+
+position: absolute;
+width: 77px;
+height: 23px;
+left: 393px;
+top: 481px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* 8.000 */
+
+position: absolute;
+width: 73px;
+height: 38px;
+left: 419px;
+top: 435px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 1 */
+
+position: absolute;
+width: 10px;
+height: 38px;
+left: 424px;
+top: 504px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 77 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 54px;
+height: 34px;
+left: 405px;
+top: 506px;
+
+border: 1px solid #000000;
+border-radius: 20px;
+
+
+/* Rectangle 75 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 238px;
+height: 155px;
+left: 127px;
+top: 376px;
+
+background: url(g2.jpg);
+border: 3px solid #000000;
+border-radius: 60px;
+
+
+/* Kerjanjang */
+
+position: relative;
+width: 1440px;
+height: 722px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 204px;
+left: 0px;
+top: 0px;
+
+background: #500000;
+border: 3px solid #000000;
+
+
+/* logo_bearindo-removebg-preview 1 */
+
+position: absolute;
+width: 533px;
+height: 377px;
+left: -121px;
+top: -87px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* CONTACT */
+
+position: absolute;
+width: 269px;
+height: 56px;
+left: 487px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* PRODUK */
+
+position: absolute;
+width: 152px;
+height: 56px;
+left: 801px;
+top: 74px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* User_fill */
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1312px;
+top: 58px;
+
+
+
+/* Ellipse 45 */
+
+position: absolute;
+left: 13.78%;
+right: 13.78%;
+top: 58.33%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 46 */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 12.5%;
+bottom: 45.83%;
+
+background: #FFFFFF;
+
+
+/* Basket_alt_3_duotone */
+
+position: absolute;
+width: 75px;
+height: 75px;
+left: 1166px;
+top: 56px;
+
+
+
+/* Vector 339 */
+
+position: absolute;
+left: 25%;
+right: 12.5%;
+top: 29.17%;
+bottom: 37.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 167 */
+
+position: absolute;
+left: 66.67%;
+right: 25%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Ellipse 168 */
+
+position: absolute;
+left: 33.33%;
+right: 58.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 41 */
+
+position: absolute;
+left: 27.08%;
+right: 27.08%;
+top: 60.42%;
+bottom: 27.08%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.58%;
+right: 68.75%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1px solid #FFFFFF;
+
+
+/* KERANJANG SAYA */
+
+position: absolute;
+width: 444px;
+height: 56px;
+left: 104px;
+top: 239px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Rectangle 72 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 622px;
+height: 220px;
+left: 91px;
+top: 361px;
+
+border: 8px solid #000000;
+border-radius: 60px;
+
+
+/* Bearing 6201 ZZ */
+
+position: absolute;
+width: 253px;
+height: 48px;
+left: 386px;
+top: 400px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* IDR */
+
+position: absolute;
+width: 26px;
+height: 23px;
+left: 386px;
+top: 444px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* QUANTITY */
+
+position: absolute;
+width: 77px;
+height: 23px;
+left: 386px;
+top: 502px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+color: #9E9E9E;
+
+
+
+/* 8.000 */
+
+position: absolute;
+width: 73px;
+height: 38px;
+left: 412px;
+top: 456px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* 1 */
+
+position: absolute;
+width: 10px;
+height: 38px;
+left: 417px;
+top: 525px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 74 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 54px;
+height: 34px;
+left: 398px;
+top: 527px;
+
+border: 1px solid #000000;
+border-radius: 20px;
+
+
+/* Group 15 */
+
+position: absolute;
+width: 565px;
+height: 82px;
+left: 798px;
+top: 420px;
+
+
+
+/* Rectangle 70 */
+
+position: absolute;
+width: 565px;
+height: 82px;
+left: 798px;
+top: 420px;
+
+background: #A20202;
+border-radius: 50px;
+
+
+/* LANJUTKAN PEMBAYARAN */
+
+position: absolute;
+width: 425px;
+height: 48px;
+left: 868px;
+top: 437px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 57 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 238px;
+height: 155px;
+left: 122px;
+top: 389px;
+
+background: url(g2.jpg);
+border: 3px solid #000000;
+border-radius: 60px;
+
+
+/* btn produk */
+
+box-sizing: border-box;
+
+position: relative;
+width: 1314px;
+height: 351px;
+
+border: 1px dashed #8A38F5;
+border-radius: 5px;
+
+
+/* Property 1=Default */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px;
+gap: 15px;
+
+position: absolute;
+width: 1259px;
+height: 91px;
+left: 20px;
+top: 20px;
+
+background: #FFFFFF;
+border: 4px solid #020202;
+border-radius: 10px;
+
+
+/* Frame 3 */
+
+width: 405px;
+height: 61px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cari Merk / Nama / Tipe Produk */
+
+position: absolute;
+width: 319px;
+height: 30px;
+left: 23px;
+top: 16px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #666666;
+
+
+
+/* Property 1=Variant2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px;
+gap: 15px;
+isolation: isolate;
+
+position: absolute;
+width: 1259px;
+height: 91px;
+left: 20px;
+top: 172px;
+
+background: #FFFFFF;
+border: 4px solid #020202;
+border-radius: 10px;
+
+
+/* Frame 3 */
+
+position: absolute;
+width: 406px;
+height: 100px;
+left: 14px;
+top: -32px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Cari Merk / Nama / Tipe Produk */
+
+position: absolute;
+width: 319px;
+height: 30px;
+left: 23px;
+top: 16px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #666666;
+
+
+
+/* Frame 4 */
+
+width: 21px;
+height: 35px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Line 1 */
+
+position: absolute;
+width: 35px;
+height: 0px;
+left: 10px;
+top: 0px;
+
+border: 4px solid #000000;
+transform: rotate(90deg);
+
+
+/* btn username */
+
+box-sizing: border-box;
+
+position: relative;
+width: 406px;
+height: 283px;
+
+border: 1px dashed #8A38F5;
+border-radius: 5px;
+
+
+/* Property 1=Default */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px;
+gap: 15px;
+
+position: absolute;
+width: 366px;
+height: 91px;
+left: 20px;
+top: 20px;
+
+background: #FFFFFF;
+border: 4px solid #020202;
+border-radius: 10px;
+
+
+/* Frame 3 */
+
+width: 303px;
+height: 61px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Masukkan Username */
+
+position: absolute;
+width: 220px;
+height: 30px;
+left: 23px;
+top: 16px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #666666;
+
+
+
+/* Property 1=Variant2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px;
+gap: 15px;
+isolation: isolate;
+
+position: absolute;
+width: 366px;
+height: 91px;
+left: 20px;
+top: 172px;
+
+background: #FFFFFF;
+border: 4px solid #020202;
+border-radius: 10px;
+
+
+/* Frame 3 */
+
+position: absolute;
+width: 323.87px;
+height: 80px;
+left: 13px;
+top: -31px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Masukkan Username */
+
+position: absolute;
+width: 220px;
+height: 30px;
+left: 23px;
+top: 16px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #666666;
+
+
+
+/* Frame 4 */
+
+width: 21px;
+height: 35px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Line 1 */
+
+position: absolute;
+width: 35px;
+height: 0px;
+left: 10px;
+top: 0px;
+
+border: 4px solid #000000;
+transform: rotate(90deg);
+
+
+/* btn password */
+
+box-sizing: border-box;
+
+position: relative;
+width: 406px;
+height: 283px;
+
+border: 1px dashed #8A38F5;
+border-radius: 5px;
+
+
+/* Property 1=Default */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px;
+gap: 15px;
+
+position: absolute;
+width: 366px;
+height: 91px;
+left: 20px;
+top: 20px;
+
+background: #FFFFFF;
+border: 4px solid #020202;
+border-radius: 10px;
+
+
+/* Frame 3 */
+
+width: 303px;
+height: 61px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Masukkan Password */
+
+position: absolute;
+width: 214px;
+height: 30px;
+left: 23px;
+top: 16px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #666666;
+
+
+
+/* Property 1=Variant2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px;
+gap: 15px;
+isolation: isolate;
+
+position: absolute;
+width: 366px;
+height: 91px;
+left: 20px;
+top: 172px;
+
+background: #FFFFFF;
+border: 4px solid #020202;
+border-radius: 10px;
+
+
+/* Frame 3 */
+
+position: absolute;
+width: 323.87px;
+height: 80px;
+left: 13px;
+top: -31px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Masukkan Password */
+
+position: absolute;
+width: 214px;
+height: 30px;
+left: 23px;
+top: 16px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #666666;
+
+
+
+/* Frame 4 */
+
+width: 21px;
+height: 35px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Line 1 */
+
+position: absolute;
+width: 35px;
+height: 0px;
+left: 10px;
+top: 0px;
+
+border: 4px solid #000000;
+transform: rotate(90deg);
+
+
+/* login */
+
+box-sizing: border-box;
+
+position: relative;
+width: 1440px;
+height: 1271px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 84 */
+
+position: absolute;
+width: 1440px;
+height: 1271px;
+left: 0px;
+top: 0px;
+
+background: #E2CACA;
+opacity: 0.3;
+
+
+/* logo_bearindo-removebg-preview 2 */
+
+position: absolute;
+width: 1131px;
+height: 800px;
+left: 146px;
+top: -91px;
+
+background: url(logo_bearindo-removebg-preview.png);
+
+
+/* Rectangle 81 */
+
+position: absolute;
+width: 918px;
+height: 463px;
+left: 261px;
+top: 508px;
+
+background: linear-gradient(0deg, #A20202, #A20202);
+border-radius: 100px;
+
+
+/* Group 27 */
+
+position: absolute;
+width: 176px;
+height: 72px;
+left: 630px;
+top: 830px;
+
+
+
+/* Rectangle 82 */
+
+position: absolute;
+width: 176px;
+height: 72px;
+left: 630px;
+top: 830px;
+
+background: #395697;
+border-radius: 30px;
+
+
+/* LOGIN */
+
+position: absolute;
+width: 108px;
+height: 53px;
+left: 664px;
+top: 839px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 52px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* btn username */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px;
+gap: 15px;
+
+position: absolute;
+width: 366px;
+height: 91px;
+left: 537px;
+top: 560px;
+
+background: #FFFFFF;
+border: 4px solid #020202;
+border-radius: 10px;
+
+
+/* Frame 3 */
+
+width: 303px;
+height: 61px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Masukkan Username */
+
+position: absolute;
+width: 220px;
+height: 30px;
+left: 23px;
+top: 16px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #666666;
+
+
+
+/* btn password */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px;
+gap: 15px;
+
+position: absolute;
+width: 366px;
+height: 91px;
+left: 537px;
+top: 693px;
+
+background: #FFFFFF;
+border: 4px solid #020202;
+border-radius: 10px;
+
+
+/* Frame 3 */
+
+width: 303px;
+height: 61px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Masukkan Password */
+
+position: absolute;
+width: 214px;
+height: 30px;
+left: 23px;
+top: 16px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+color: #666666;
+
+
+
+/* Rectangle 50 */
+
+position: absolute;
+width: 1259px;
+height: 21px;
+
+background: #000000;
+
+
+/* Rectangle 51 */
+
+position: absolute;
+width: 1259px;
+height: 21px;
+
+background: #000000;
+
+
+/* Rectangle 52 */
+
+position: absolute;
+width: 1259px;
+height: 21px;
+
+background: #000000;
+
+
+/* Rectangle 50 */
+
+position: absolute;
+width: 1259px;
+height: 21px;
+
+background: #000000;
+
+
+/* Rectangle 51 */
+
+position: absolute;
+width: 1259px;
+height: 21px;
+
+background: #000000;
+
+
+/* Rectangle 52 */
+
+position: absolute;
+width: 1259px;
+height: 21px;
+
+background: #000000;
