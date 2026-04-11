@@ -58,3 +58,4 @@
         Already registered?
         <a href="{{ route('login') }}" class="font-semibold leading-6 text-red-600 hover:text-red-500 transition-colors">Sign in to your account</a>
     </p>
+</x-guest-layout>

@@ -56,3 +56,4 @@
         Not a member?
         <a href="{{ route('register') }}" class="font-semibold leading-6 text-red-600 hover:text-red-500 transition-colors">Create an account</a>
     </p>
+</x-guest-layout>
