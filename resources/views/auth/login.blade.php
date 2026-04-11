@@ -9,15 +9,21 @@
     <!-- Side Graphics and Layout Container -->
     <div class="fixed top-0 left-0 w-full h-full overflow-hidden z-[-1] hidden md:block">
         <!-- Light transparent red curve -->
-        <div class="absolute bg-[#e2caca] h-[1271px] left-[0] opacity-30 top-[0] w-[1440px] pointer-events-none"></div>
+        <div class="absolute bg-[#e2caca] h-[1271px] left-[-1px] opacity-30 top-[-1px] w-[1440px] pointer-events-none"></div>
         <!-- Dark red curve shape -->
         <div class="absolute bg-[#a20202] h-[463px] left-[260px] rounded-[100px] top-[507px] w-[918px] pointer-events-none"></div>
     </div>
 
+    <!-- Logo -->
+    <div class="absolute top-[-92px] left-1/2 -translate-x-1/2 w-[1131px] h-[800px] z-0 pointer-events-none">
+        <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-full h-full object-contain">
+    </div>
+
     <!-- Login Form Area Container -->
-    <div class="relative z-10 w-full max-w-md mx-auto">
+    <div class="relative z-10 w-full max-w-md mx-auto pt-96">
+        
         <div class="mb-10 text-center relative">
-            <h2 class="text-4xl font-sans font-bold text-white tracking-widest relative z-10 mt-12 bg-[#395697] inline-block px-10 py-3 rounded-[30px] shadow-lg">LOGIN</h2>
+            <h2 class="text-4xl font-sans font-bold text-white tracking-widest relative z-10 bg-[#395697] inline-block px-10 py-3 rounded-[30px] shadow-lg">LOGIN</h2>
         </div>
 
         <!-- Session Status -->
