@@ -9,6 +9,10 @@ Route::get('/', function () {
     return view('dashboard', compact('products'));
 });
 
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
 Route::get('/dashboard', function () {
     $products = Product::with('category')->get();
     return view('dashboard', compact('products'));

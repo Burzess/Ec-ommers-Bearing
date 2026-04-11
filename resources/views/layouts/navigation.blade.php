@@ -18,7 +18,7 @@
                     <x-nav-link href="#produk" :active="false">
                         {{ __('Katalog Produk') }}
                     </x-nav-link>
-                    <x-nav-link href="#tentang" :active="false">
+                    <x-nav-link :href="route('about')" :active="request()->routeIs('about')">
                         {{ __('Tentang Kami') }}
                     </x-nav-link>
                 </div>
@@ -84,6 +84,9 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('about')" :active="request()->routeIs('about')">
+                {{ __('Tentang Kami') }}
+            </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
@@ -112,5 +115,7 @@
         </div>
     </div>
 </nav>
+
+
 
 
