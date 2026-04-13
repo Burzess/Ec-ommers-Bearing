@@ -1,18 +1,12 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Keranjang Belanja') }}
+            Keranjang Belanja
         </h2>
     </x-slot>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-
-            @if(session('success'))
-                <div class="mb-4 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
-                    <span class="block sm:inline">{{ session('success') }}</span>
-                </div>
-            @endif
 
             @if($cart->items->count() > 0)
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
@@ -79,7 +73,7 @@
                 </div>
 
                 <div class="flex justify-end mt-6">
-                    <div class="bg-white p-6 rounded-lg shadow-sm font-semibold text-xl border-l-4 border-red-600">
+                    <div class="bg-gray-50 shadow-md p-6 rounded-lg shadow-sm font-semibold text-xl border-l-4 border-red-600">
                         Total Tagihan: Rp {{ number_format($totalPrice, 0, ',', '.') }}
                     </div>
                 </div>
