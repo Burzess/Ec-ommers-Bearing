@@ -22,7 +22,7 @@
                         
                         <!-- Image Gallery -->
                         <div class="flex flex-col">
-                            <div class="bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center h-96 p-4">
+                            <div class="bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center h-80 p-4">
                                 @if($product->image)
                                     <img src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}" class="object-contain h-full w-full">
                                 @else

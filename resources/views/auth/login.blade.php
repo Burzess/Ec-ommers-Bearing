@@ -1,81 +1,75 @@
 <x-guest-layout>
-    <!-- Background styling for the page -->
-    <style>
-        body {
-            background-color: white !important;
-        }
-    </style>
+    <div class="min-h-screen bg-white flex flex-col items-center justify-center p-4 font-['Poppins']">
 
-    <!-- Side Graphics and Layout Container -->
-    <div class="fixed top-0 left-0 w-full h-full overflow-hidden z-[-1] hidden md:block">
-        <!-- Light transparent red curve -->
-        <div class="absolute bg-[#e2caca] h-[1271px] left-[-1px] opacity-30 top-[-1px] w-[1440px] pointer-events-none"></div>
-        <!-- Dark red curve shape -->
-        <div class="absolute bg-[#a20202] h-[463px] left-[260px] rounded-[100px] top-[507px] w-[918px] pointer-events-none"></div>
-    </div>
-
-    <!-- Logo -->
-    <div class="absolute top-[-92px] left-1/2 -translate-x-1/2 w-[1131px] h-[800px] z-0 pointer-events-none">
-        <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-full h-full object-contain">
-    </div>
-
-    <!-- Login Form Area Container -->
-    <div class="relative z-10 w-full max-w-md mx-auto pt-96">
-        
-        <div class="mb-10 text-center relative">
-            <h2 class="text-4xl font-sans font-bold text-white tracking-widest relative z-10 bg-[#395697] inline-block px-10 py-3 rounded-[30px] shadow-lg">LOGIN</h2>
+        <!-- Logo -->
+        <div class="w-full max-w-[500px] mb-[-60px] mt-[-30px]">
+            <img src="{{ asset('images/logo_bearindo.png') }}" alt="Logo Bearindo" class="w-full h-auto object-contain">
         </div>
 
-        <!-- Session Status -->
-        <x-auth-session-status class="mb-4" :status="session('status')" />
+        <!-- Red Card Container -->
+        <div class="relative w-full max-w-[600px] min-h-[350px] bg-[#a20202] rounded-[60px] flex flex-col items-center justify-center p-6 shadow-xl">
 
-        <form method="POST" action="{{ route('login') }}" class="space-y-6">
-            @csrf
-
-            <!-- Username/Email -->
-            <div class="relative">
-                <x-text-input id="email" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" placeholder="Masukkan Username" class="bg-white border-4 border-[#020202] border-solid w-full h-[91px] rounded-[10px] pl-[60px] text-xl font-sans font-bold text-[#666] focus:ring-[#395697] focus:border-[#395697] pt-[15px] pb-[15px]" />
-                <div class="absolute left-6 top-1/2 -translate-y-1/2 h-[35px] w-[21px] flex items-center justify-center">
-                    <div class="h-[35px] w-[2px] bg-[#020202] rotate-90"></div>
-                </div>
-            </div>
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-
-            <!-- Password -->
-            <div class="relative mt-6">
-                <x-text-input id="password" type="password" name="password" required autocomplete="current-password" placeholder="Masukkan Password" class="bg-white border-4 border-[#020202] border-solid w-full h-[91px] rounded-[10px] pl-[60px] text-xl font-sans font-bold text-[#666] focus:ring-[#395697] focus:border-[#395697] pt-[15px] pb-[15px]" />
-                <div class="absolute left-6 top-1/2 -translate-y-1/2 h-[35px] w-[21px] flex items-center justify-center">
-                    <div class="h-[35px] w-[2px] bg-[#020202] rotate-90"></div>
-                </div>
-            </div>
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-
-            <div class="flex items-center justify-between mt-4">
-                <div class="flex items-center">
-                    <input id="remember_me" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-[#395697] focus:ring-[#395697]" name="remember">
-                    <label for="remember_me" class="ml-2 block text-sm leading-6 text-gray-900 font-semibold">{{ __('Remember me') }}</label>
-                </div>
-
-                @if (Route::has('password.request'))
-                    <div class="text-sm leading-6">
-                        <a href="{{ route('password.request') }}" class="font-bold text-[#395697] hover:text-blue-800 transition-colors">
-                            {{ __('Lupa Password?') }}
-                        </a>
-                    </div>
-                @endif
+            <!-- Status Messages -->
+            <div class="absolute top-4 left-1/2 transform -translate-x-1/2 text-center">
+                <x-auth-session-status class="text-white text-sm" :status="session('status')" />
             </div>
 
-            <div class="mt-8 text-center pt-8">
-                <button type="submit" class="w-full bg-[#395697] hover:bg-blue-800 text-white font-bold py-4 rounded-[10px] text-xl tracking-wider transition-colors shadow-md border-2 border-black">
-                    {{ __('MASUK') }}
+            <form method="POST" action="{{ route('login') }}" class="w-full max-w-[400px] flex flex-col items-center space-y-4 mt-6">
+                @csrf
+
+                <!-- Username Input -->
+                <div class="w-full">
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        value="{{ old('email') }}"
+                        required
+                        autofocus
+                        autocomplete="username"
+                        placeholder="Masukkan Username"
+                        class="w-full h-[60px] rounded-[8px] border border-[#020202] bg-white pl-[25px] text-[16px] font-bold text-[#666666] placeholder:text-[#666666] focus:border-[#395697] focus:ring-[#395697]"
+                    />
+                    <x-input-error :messages="$errors->get('email')" class="text-white text-sm mt-1" />
+                </div>
+
+                <!-- Password Input -->
+                <div class="w-full">
+                    <input
+                        id="password"
+                        type="password"
+                        name="password"
+                        required
+                        autocomplete="current-password"
+                        placeholder="Masukkan Password"
+                        class="w-full h-[60px] rounded-[8px] border border-[#020202] bg-white pl-[25px] text-[16px] font-bold text-[#666666] placeholder:text-[#666666] focus:border-[#395697] focus:ring-[#395697]"
+                    />
+                    <x-input-error :messages="$errors->get('password')" class="text-white text-sm mt-1" />
+                </div>
+
+                <!-- Remember Me & Forgot Password -->
+                <div class="w-full flex items-center justify-between text-white text-sm">
+                    <label for="remember_me" class="inline-flex items-center cursor-pointer">
+                        <input id="remember_me" type="checkbox" class="rounded border-gray-200 text-[#395697] shadow-sm focus:ring-[#395697]" name="remember">
+                        <span class="ms-2 font-semibold">{{ __('Remember me') }}</span>
+                    </label>
+                    @if (Route::has('password.request'))
+                        <a href="{{ route('password.request') }}" class="font-bold text-gray-200 hover:text-white underline">{{ __('Lupa Password?') }}</a>
+                    @endif
+                </div>
+
+                <!-- LOGIN Button -->
+                <button type="submit" class="w-[140px] h-[50px] rounded-[20px] bg-[#395697] text-[24px] font-bold text-white hover:bg-[#2a437a] flex items-center justify-center shadow-lg">
+                    LOGIN
                 </button>
-            </div>
-        </form>
 
-        <p class="mt-8 text-center text-sm font-semibold text-gray-600">
-            Belum punya akun?
-            <a href="{{ route('register') }}" class="font-bold leading-6 text-[#a20202] hover:text-red-900 transition-colors">Daftar sekarang</a>
-        </p>
+            </form>
+
+            <!-- Register Link -->
+            <p class="text-center text-[14px] font-semibold text-gray-200 mt-6">
+                Belum punya akun?
+                <a href="{{ route('register') }}" class="font-bold text-[#395697] hover:text-[#2a437a] underline">Daftar sekarang</a>
+            </p>
+        </div>
     </div>
 </x-guest-layout>
-

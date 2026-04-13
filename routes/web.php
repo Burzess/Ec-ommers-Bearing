@@ -2,16 +2,33 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Models\Product;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    $products = Product::with('category')->get();
-    return view('dashboard', compact('products'));
+Route::get('/', function (Request $request) {
+    $search = trim((string) $request->query('q', ''));
+
+    $products = Product::with('category')
+        ->when($search !== '', function ($query) use ($search) {
+            $query->where(function ($subQuery) use ($search) {
+                $subQuery
+                    ->where('name', 'like', "%{$search}%")
+                    ->orWhere('sku', 'like', "%{$search}%")
+                    ->orWhereHas('category', function ($categoryQuery) use ($search) {
+                        $categoryQuery->where('name', 'like', "%{$search}%");
+                    });
+            });
+        })
+        ->get();
+
+    return view('dashboard', compact('products', 'search'));
 })->name('dashboard');
 
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+
+Route::post('/contact', [\App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
 
 Route::get('/products/{product}', function (Product $product) {
     $product->load('category');
