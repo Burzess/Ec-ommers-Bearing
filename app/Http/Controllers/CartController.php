@@ -35,6 +35,10 @@ class CartController extends Controller
             return response()->json(['message' => 'Produk berhasil ditambahkan ke keranjang.']);
         }
 
+        if ($request->has('checkout')) {
+            return redirect()->route('payment.index');
+        }
+
         return back()->with('success', 'Produk berhasil ditambahkan ke keranjang.');
     }
 

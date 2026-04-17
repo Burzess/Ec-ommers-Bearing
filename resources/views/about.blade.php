@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="min-h-screen bg-white py-8 sm:py-10">
+    <div class="min-h-screen bg-white py-4 sm:py-4">
         <div class="mx-auto max-w-[1100px] px-3 sm:px-4">
             <section class="isolate">
                 <div class="relative mx-auto h-[220px] w-full max-w-[760px] text-center sm:h-[220px]">
@@ -10,8 +10,8 @@
                         <div class="absolute inset-0 bg-white/40"></div>
                     </div>
 
-                    <div class="relative z-10 mt-2 gap-2 sm:pt-2">
-                        <h1 class="text-[20px] font-extrabold uppercase mt-6 text-black sm:text-[40px]">
+                    <div class="relative z-10 mt-2 gap-2 sm:pt-0">
+                        <h1 class="text-[20px] font-extrabold uppercase mt-0 text-black sm:text-[40px]">
                             Contact <span class="text-[#a20202]">Us</span>
                         </h1>
                         <p
