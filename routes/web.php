@@ -46,4 +46,14 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// Admin Routes
+Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
+    Route::get('/dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
+    Route::resource('/products', \App\Http\Controllers\Admin\ProductController::class)->except('show');
+    Route::resource('/categories', \App\Http\Controllers\Admin\CategoryController::class)->except('show');
+    Route::resource('/customers', \App\Http\Controllers\Admin\CustomerController::class)->only(['index']);
+    Route::get('/profile', [\App\Http\Controllers\Admin\ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [\App\Http\Controllers\Admin\ProfileController::class, 'update'])->name('profile.update');
+});
+
 require __DIR__.'/auth.php';
