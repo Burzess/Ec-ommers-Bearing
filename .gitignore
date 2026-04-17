@@ -20,6 +20,7 @@
 /storage/pail
 /vendor
 .agents/
+*.md
 _ide_helper.php
 Homestead.json
 Homestead.yaml
