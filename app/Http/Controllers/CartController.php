@@ -31,7 +31,15 @@ class CartController extends Controller
             ]);
         }
 
-        return redirect()->route('cart.index')->with('success', 'Produk berhasil ditambahkan ke keranjang.');
+        if ($request->ajax()) {
+            return response()->json(['message' => 'Produk berhasil ditambahkan ke keranjang.']);
+        }
+
+        if ($request->has('checkout')) {
+            return redirect()->route('payment.index');
+        }
+
+        return back()->with('success', 'Produk berhasil ditambahkan ke keranjang.');
     }
 
     public function update(Request $request, \App\Models\CartItem $cartItem)

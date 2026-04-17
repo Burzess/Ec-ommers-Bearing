@@ -16,8 +16,17 @@ class ProfileController extends Controller
      */
     public function edit(Request $request): View
     {
+        $user = $request->user();
+
+        $initials = collect(preg_split('/\s+/', trim((string) ($user?->name ?? 'U'))))
+            ->filter()
+            ->take(2)
+            ->map(fn (string $part) => mb_substr($part, 0, 1))
+            ->implode('');
+
         return view('profile.edit', [
-            'user' => $request->user(),
+            'user' => $user,
+            'initials' => $initials,
         ]);
     }
 
