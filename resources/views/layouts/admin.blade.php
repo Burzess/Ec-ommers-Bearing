@@ -64,7 +64,7 @@
                         Katalog Produk
                     </a>
 
-                    <a href="#" class="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-semibold text-gray-600 transition hover:bg-gray-100">
+                    <a href="{{ route('admin.orders.index') }}" class="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-semibold transition {{ request()->routeIs('admin.orders.*') ? 'bg-red-50 text-[#A20202]' : 'text-gray-600 hover:bg-gray-100' }}">
                         <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5h6m-7 4h8m-8 4h8M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" />
                         </svg>
@@ -76,6 +76,27 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19a3 3 0 1 0-6 0m6 0H9m6 0h3m-9 0H6m9-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 9a3 3 0 1 0-6 0m6 0h1.5a1.5 1.5 0 0 0 1.5-1.5V16a4 4 0 0 0-4-4h-1m-10 7a3 3 0 1 0-6 0m6 0H3.5A1.5 1.5 0 0 1 2 17.5V16a4 4 0 0 1 4-4h1" />
                         </svg>
                         Data Pelanggan
+                    </a>
+
+                    <a href="{{ route('admin.company-setting.edit') }}" class="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-semibold transition {{ request()->routeIs('admin.company-setting.*') ? 'bg-red-50 text-[#A20202]' : 'text-gray-600 hover:bg-gray-100' }}">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.5 6h9M10.5 12h9m-9 6h9M4.5 6h.01M4.5 12h.01M4.5 18h.01" />
+                        </svg>
+                        Profil Perusahaan
+                    </a>
+
+                    <a href="{{ route('admin.shipping-cities.index') }}" class="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-semibold transition {{ request()->routeIs('admin.shipping-cities.*') ? 'bg-red-50 text-[#A20202]' : 'text-gray-600 hover:bg-gray-100' }}">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21s-6-4.35-6-10a6 6 0 1 1 12 0c0 5.65-6 10-6 10Zm0-7.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                        </svg>
+                        Ongkir Kota
+                    </a>
+
+                    <a href="{{ route('admin.payment-methods.index') }}" class="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-semibold transition {{ request()->routeIs('admin.payment-methods.*') ? 'bg-red-50 text-[#A20202]' : 'text-gray-600 hover:bg-gray-100' }}">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3Z" />
+                        </svg>
+                        Metode Pembayaran
                     </a>
                 </nav>
             </aside>
@@ -108,8 +129,11 @@
                     <a href="{{ route('admin.dashboard') }}" class="block rounded-xl px-3 py-2.5 text-sm font-semibold {{ request()->routeIs('admin.dashboard') ? 'bg-red-50 text-[#A20202]' : 'text-gray-600 hover:bg-gray-100' }}">Dashboard</a>
                     <a href="{{ route('admin.products.index') }}" class="block rounded-xl px-3 py-2.5 text-sm font-semibold {{ request()->routeIs('admin.products.*') ? 'bg-red-50 text-[#A20202]' : 'text-gray-600 hover:bg-gray-100' }}">Katalog Produk</a>
                     <a href="{{ route('admin.categories.index') }}" class="block rounded-xl px-3 py-2.5 text-sm font-semibold {{ request()->routeIs('admin.categories.*') ? 'bg-red-50 text-[#A20202]' : 'text-gray-600 hover:bg-gray-100' }}">Kelola Kategori</a>
-                    <a href="#" class="block rounded-xl px-3 py-2.5 text-sm font-semibold text-gray-600 hover:bg-gray-100">Daftar Pesanan</a>
+                    <a href="{{ route('admin.orders.index') }}" class="block rounded-xl px-3 py-2.5 text-sm font-semibold {{ request()->routeIs('admin.orders.*') ? 'bg-red-50 text-[#A20202]' : 'text-gray-600 hover:bg-gray-100' }}">Daftar Pesanan</a>
                     <a href="{{ route('admin.customers.index') }}" class="block rounded-xl px-3 py-2.5 text-sm font-semibold {{ request()->routeIs('admin.customers.*') ? 'bg-red-50 text-[#A20202]' : 'text-gray-600 hover:bg-gray-100' }}">Data Pelanggan</a>
+                    <a href="{{ route('admin.company-setting.edit') }}" class="block rounded-xl px-3 py-2.5 text-sm font-semibold {{ request()->routeIs('admin.company-setting.*') ? 'bg-red-50 text-[#A20202]' : 'text-gray-600 hover:bg-gray-100' }}">Profil Perusahaan</a>
+                    <a href="{{ route('admin.shipping-cities.index') }}" class="block rounded-xl px-3 py-2.5 text-sm font-semibold {{ request()->routeIs('admin.shipping-cities.*') ? 'bg-red-50 text-[#A20202]' : 'text-gray-600 hover:bg-gray-100' }}">Ongkir Kota</a>
+                    <a href="{{ route('admin.payment-methods.index') }}" class="block rounded-xl px-3 py-2.5 text-sm font-semibold {{ request()->routeIs('admin.payment-methods.*') ? 'bg-red-50 text-[#A20202]' : 'text-gray-600 hover:bg-gray-100' }}">Metode Pembayaran</a>
                 </nav>
             </aside>
 

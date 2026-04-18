@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class IsAdmin
+class IsBuyer
 {
     /**
      * Handle an incoming request.
@@ -15,8 +15,8 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (! $request->user()?->isAdmin()) {
-            abort(403, 'Anda tidak memiliki akses ke halaman admin.');
+        if (! $request->user()?->isBuyer()) {
+            abort(403, 'Halaman ini hanya bisa diakses oleh buyer.');
         }
 
         return $next($request);

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -24,9 +26,7 @@ Route::get('/', function (Request $request) {
     return view('dashboard', compact('products', 'search'));
 })->name('dashboard');
 
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
+Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 Route::post('/contact', [\App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
 
@@ -35,7 +35,7 @@ Route::get('/products/{product}', function (Product $product) {
     return view('products.show', compact('product'));
 })->name('products.show');
 
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth', 'buyer'])->group(function () {
     Route::get('/cart', [\App\Http\Controllers\CartController::class, 'index'])->name('cart.index');
     Route::post('/cart/{product}', [\App\Http\Controllers\CartController::class, 'add'])->name('cart.add');
     Route::put('/cart/items/{cartItem}', [\App\Http\Controllers\CartController::class, 'update'])->name('cart.update');
@@ -43,12 +43,10 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::patch('/profile/address', [ProfileController::class, 'updateAddress'])->name('profile.address.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-    Route::get('/payment', function () {
-        $cart = auth()->user()->cart()->with('items.product')->firstOrCreate([]);
-        return view('payment.index', compact('cart'));
-    })->name('payment.index');
+    Route::get('/payment', [PaymentController::class, 'index'])->name('payment.index');
 });
 
 // Admin Routes
@@ -56,7 +54,12 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::get('/dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
     Route::resource('/products', \App\Http\Controllers\Admin\ProductController::class)->except('show');
     Route::resource('/categories', \App\Http\Controllers\Admin\CategoryController::class)->except('show');
+    Route::resource('/orders', \App\Http\Controllers\Admin\OrderController::class)->only(['index', 'show', 'update', 'destroy']);
     Route::resource('/customers', \App\Http\Controllers\Admin\CustomerController::class)->only(['index']);
+    Route::get('/company-setting', [\App\Http\Controllers\Admin\CompanySettingController::class, 'edit'])->name('company-setting.edit');
+    Route::patch('/company-setting', [\App\Http\Controllers\Admin\CompanySettingController::class, 'update'])->name('company-setting.update');
+    Route::resource('/shipping-cities', \App\Http\Controllers\Admin\ShippingCityController::class)->except('show');
+    Route::resource('/payment-methods', \App\Http\Controllers\Admin\PaymentMethodController::class)->except('show');
     Route::get('/profile', [\App\Http\Controllers\Admin\ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [\App\Http\Controllers\Admin\ProfileController::class, 'update'])->name('profile.update');
 });

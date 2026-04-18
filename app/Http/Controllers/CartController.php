@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\PaymentMethod;
 use Illuminate\Http\Request;
 
 class CartController extends Controller
@@ -9,7 +10,12 @@ class CartController extends Controller
     public function index()
     {
         $cart = auth()->user()->cart()->with('items.product')->firstOrCreate([]);
-        return view('cart.index', compact('cart'));
+        $paymentMethods = PaymentMethod::query()
+            ->active()
+            ->ordered()
+            ->get();
+
+        return view('cart.index', compact('cart', 'paymentMethods'));
     }
 
     public function add(Request $request, \App\Models\Product $product)

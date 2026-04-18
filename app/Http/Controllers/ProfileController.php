@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UpdateBuyerAddressRequest;
+use App\Models\ShippingCity;
 use App\Http\Requests\ProfileUpdateRequest;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -16,7 +18,17 @@ class ProfileController extends Controller
      */
     public function edit(Request $request): View
     {
-        $user = $request->user();
+        $user = $request->user()->load('shippingCity');
+        $orders = $user->orders()
+            ->with(['items.product'])
+            ->latest()
+            ->take(3)
+            ->get();
+
+        $shippingCities = ShippingCity::query()
+            ->active()
+            ->orderBy('name')
+            ->get();
 
         $initials = collect(preg_split('/\s+/', trim((string) ($user?->name ?? 'U'))))
             ->filter()
@@ -27,6 +39,9 @@ class ProfileController extends Controller
         return view('profile.edit', [
             'user' => $user,
             'initials' => $initials,
+            'orders' => $orders,
+            'totalOrdersCount' => $user->orders()->count(),
+            'shippingCities' => $shippingCities,
         ]);
     }
 
@@ -35,7 +50,11 @@ class ProfileController extends Controller
      */
     public function update(ProfileUpdateRequest $request): RedirectResponse
     {
-        $request->user()->fill($request->validated());
+        $validated = $request->validated();
+        $validated['username'] = $validated['username'] ?? null;
+        $validated['phone'] = $validated['phone'] ?? null;
+
+        $request->user()->fill($validated);
 
         if ($request->user()->isDirty('email')) {
             $request->user()->email_verified_at = null;
@@ -44,6 +63,21 @@ class ProfileController extends Controller
         $request->user()->save();
 
         return Redirect::route('profile.edit')->with('status', 'profile-updated');
+    }
+
+    /**
+     * Update the user's shipping address information.
+     */
+    public function updateAddress(UpdateBuyerAddressRequest $request): RedirectResponse
+    {
+        $validated = $request->validated();
+        $validated['postal_code'] = $validated['postal_code'] ?? null;
+        $validated['phone'] = $validated['phone'] ?? null;
+
+        $request->user()->fill($validated);
+        $request->user()->save();
+
+        return Redirect::route('profile.edit')->with('status', 'address-updated');
     }
 
     /**

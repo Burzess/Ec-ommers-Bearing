@@ -206,59 +206,39 @@
                     </h2>
                 </div>
 
-                <form class="flex flex-col gap-6 max-w-[260px] mx-auto">
-                    <!-- Option 1 -->
-                    <label class="flex items-center gap-4 cursor-pointer group">
-                        <div class="relative flex items-center justify-center shrink-0">
-                            <input type="radio" name="payment_method" value="bca" class="peer sr-only" checked>
-                            <div
-                                class="w-[26px] h-[26px] rounded-full border-[3px] border-[#1e40af] bg-transparent peer-checked:bg-[#1e40af] peer-checked:border-[#1e40af] transition overflow-hidden">
+                <form method="GET" action="{{ route('payment.index') }}" class="flex flex-col gap-6 max-w-[280px] mx-auto">
+                    @forelse ($paymentMethods as $paymentMethod)
+                        <label class="flex items-center gap-4 cursor-pointer group">
+                            <div class="relative flex items-center justify-center shrink-0">
+                                <input type="radio" name="payment_method" value="{{ $paymentMethod->code }}" class="peer sr-only"
+                                    @checked($loop->first)>
+                                <div
+                                    class="w-[26px] h-[26px] rounded-full border-[3px] border-[#1e40af] bg-transparent peer-checked:bg-[#1e40af] peer-checked:border-[#1e40af] transition overflow-hidden">
+                                </div>
+                                <div
+                                    class="absolute inset-0 m-auto w-2.5 h-2.5 rounded-full bg-white opacity-0 peer-checked:opacity-100 transition">
+                                </div>
                             </div>
-                            <div
-                                class="absolute inset-0 m-auto w-2.5 h-2.5 rounded-full bg-white opacity-0 peer-checked:opacity-100 transition">
+                            <div>
+                                <p class="font-extrabold text-[15px] text-black peer-checked:text-[#1e40af] group-hover:text-[#1e40af] transition">
+                                    {{ $paymentMethod->name }}
+                                </p>
+                                @if ($paymentMethod->description)
+                                    <p class="text-xs font-medium text-gray-500">{{ $paymentMethod->description }}</p>
+                                @endif
                             </div>
+                        </label>
+                    @empty
+                        <div class="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-medium text-red-700">
+                            Belum ada metode pembayaran aktif.
                         </div>
-                        <span
-                            class="font-extrabold text-[15px] text-black peer-checked:text-[#1e40af] group-hover:text-[#1e40af] transition">Transfer
-                            Bank BCA</span>
-                    </label>
-
-                    <!-- Option 2 -->
-                    <label class="flex items-center gap-4 cursor-pointer group">
-                        <div class="relative flex items-center justify-center shrink-0">
-                            <input type="radio" name="payment_method" value="debit" class="peer sr-only">
-                            <div
-                                class="w-[26px] h-[26px] rounded-full border-[3px] border-[#1e40af] bg-transparent peer-checked:bg-[#1e40af] transition overflow-hidden">
-                            </div>
-                            <div
-                                class="absolute inset-0 m-auto w-2.5 h-2.5 rounded-full bg-white opacity-0 peer-checked:opacity-100 transition">
-                            </div>
-                        </div>
-                        <span
-                            class="font-extrabold text-[15px] text-black peer-checked:text-[#1e40af] group-hover:text-[#1e40af] transition">Debit
-                            / Kredit</span>
-                    </label>
-
-                    <!-- Option 3 -->
-                    <label class="flex items-center gap-4 cursor-pointer group">
-                        <div class="relative flex items-center justify-center shrink-0">
-                            <input type="radio" name="payment_method" value="cash" class="peer sr-only">
-                            <div
-                                class="w-[26px] h-[26px] rounded-full border-[3px] border-[#1e40af] bg-transparent peer-checked:bg-[#1e40af] transition overflow-hidden">
-                            </div>
-                            <div
-                                class="absolute inset-0 m-auto w-2.5 h-2.5 rounded-full bg-white opacity-0 peer-checked:opacity-100 transition">
-                            </div>
-                        </div>
-                        <span
-                            class="font-extrabold text-[15px] text-black peer-checked:text-[#1e40af] group-hover:text-[#1e40af] transition">Cash
-                            Tunai</span>
-                    </label>
+                    @endforelse
 
                     <div class="mt-8 flex justify-center">
-                        <button type="button" x-on:click="window.location.href='{{ route('payment.index') }}'"
-                            class="bg-[#a20202] text-white font-extrabold px-12 py-2.5 rounded-full hover:bg-[#8a0202] shadow-xl transition text-[14px]">
-                            SIMPAN
+                        <button type="submit"
+                            class="bg-[#a20202] text-white font-extrabold px-12 py-2.5 rounded-full hover:bg-[#8a0202] shadow-xl transition text-[14px] disabled:cursor-not-allowed disabled:bg-gray-400"
+                            @disabled($paymentMethods->isEmpty())>
+                            LANJUTKAN
                         </button>
                     </div>
                 </form>

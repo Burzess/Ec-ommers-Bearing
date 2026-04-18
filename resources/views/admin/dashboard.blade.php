@@ -219,7 +219,9 @@
                     @forelse ($recentOrders as $order)
                         <tr class="text-gray-600 transition-colors hover:bg-gray-50/50">
                             <td class="px-6 py-4 text-sm font-bold text-gray-800">
-                                #{{ $order->invoice_number }}
+                                <a href="{{ route('admin.orders.show', $order) }}" class="hover:text-[#A20202] hover:underline">
+                                    #{{ $order->invoice_number }}
+                                </a>
                             </td>
                             <td class="px-6 py-4">
                                 <div class="flex items-center text-sm">

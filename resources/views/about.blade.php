@@ -1,4 +1,14 @@
 <x-app-layout>
+    @php
+        $companyName = data_get($companySetting ?? null, 'company_name', '-');
+        $companyAddress = data_get($companySetting ?? null, 'company_address', '-');
+        $companyPhone = data_get($companySetting ?? null, 'company_phone', '-');
+        $companyEmail = data_get($companySetting ?? null, 'company_email', '-');
+        $businessDays = data_get($companySetting ?? null, 'business_days', '-');
+        $businessHours = data_get($companySetting ?? null, 'business_hours', '-');
+        $mapEmbedUrl = data_get($companySetting ?? null, 'maps_embed_url', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15831.43723628913!2d112.67946124076845!3d-7.25684857497332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ff936876686d%3A0xa3fa7db480604775!2sPT.%20Asian%20Bearindo%20Jaya%20(HQ)!5e0!3m2!1sid!2sid!4v1775962861342!5m2!1sid!2sid');
+    @endphp
+
     <div class="min-h-screen bg-white py-4 sm:py-4">
         <div class="mx-auto max-w-[1100px] px-3 sm:px-4">
             <section class="isolate">
@@ -139,7 +149,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M3 7.5h18M5.25 3h13.5A2.25 2.25 0 0 1 21 5.25v13.5A2.25 2.25 0 0 1 18.75 21H5.25A2.25 2.25 0 0 1 3 18.75V5.25A2.25 2.25 0 0 1 5.25 3Z" />
                                 </svg>
-                                <p class="text-[14px] font-semibold text-black">Asian Bearindo Jaya</p>
+                                <p class="text-[14px] font-semibold text-black">{{ $companyName }}</p>
                             </div>
 
                             <div
@@ -151,11 +161,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                 </svg>
-                                <p class="text-[14px] font-semibold leading-[24px] text-black">
-                                    Jl. Tanjungsari no. 19,<br>
-                                    Sukomanunggal Surabaya<br>
-                                    Jawa Timur
-                                </p>
+                                <p class="text-[14px] font-semibold leading-[24px] text-black">{!! nl2br(e($companyAddress)) !!}</p>
                             </div>
 
                             <div
@@ -165,7 +171,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M3 5a2 2 0 0 1 2-2h3.279a1 1 0 0 1 .95.684l1.497 4.493a1 1 0 0 1-.502 1.21l-2.257 1.13a11.042 11.042 0 0 0 5.517 5.516l1.13-2.257a1 1 0 0 1 1.21-.502l4.493 1.498A1 1 0 0 1 21 15.72V19a2 2 0 0 1-2 2h-1C9.716 21 3 14.284 3 6V5Z" />
                                 </svg>
-                                <p class="text-[14px] font-semibold text-black">+62 812-3456-7890</p>
+                                <p class="text-[14px] font-semibold text-black">{{ $companyPhone }}</p>
                             </div>
 
                             <div
@@ -177,7 +183,7 @@
                                 </svg>
                                 <p
                                     class="text-[14px] font-semibold underline decoration-black/40 underline-offset-2 text-black">
-                                    admin@asianbearindo.com</p>
+                                    {{ $companyEmail }}</p>
                             </div>
 
                             <div
@@ -188,8 +194,8 @@
                                         d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
                                 <div>
-                                    <p class="text-[12px] font-semibold uppercase text-black">Senin - Jum'at</p>
-                                    <p class="text-[20px] font-extrabold leading-none text-black">08.00 - 17.00</p>
+                                    <p class="text-[12px] font-semibold uppercase text-black">{{ $businessDays }}</p>
+                                    <p class="text-[20px] font-extrabold leading-none text-black">{{ $businessHours }}</p>
                                 </div>
                             </div>
 
@@ -231,7 +237,7 @@
 
                     <div class="overflow-hidden rounded-2xl border border-gray-300 shadow-sm">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15831.43723628913!2d112.67946124076845!3d-7.25684857497332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ff936876686d%3A0xa3fa7db480604775!2sPT.%20Asian%20Bearindo%20Jaya%20(HQ)!5e0!3m2!1sid!2sid!4v1775962861342!5m2!1sid!2sid"
+                            src="{{ $mapEmbedUrl }}"
                             width="100%" height="330" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>

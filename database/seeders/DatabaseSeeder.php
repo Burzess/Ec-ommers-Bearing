@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -14,25 +13,8 @@ class DatabaseSeeder extends Seeder
 
     public function run(): void
     {
-        // USERS
-        User::factory()->create([
-            'name'     => 'Admin Asian Bearindo',
-            'email'    => 'admin@asianbearindo.com',
-            'username' => 'admin',
-            'phone'    => '081234567890',
-            'address'  => 'Jl. Tanjungsari No.19, Sukomanunggal, Surabaya',
-            'password' => bcrypt('password'),
-            'role' => 'user',
-        ]);
+        $this->call(MasterDataSeeder::class);
 
-        User::factory()->create([
-            'name'     => 'Budi Santoso',
-            'email'    => 'budi@example.com',
-            'username' => 'budi',
-            'phone'    => '081298765432',
-            'address'  => 'Jl. Raya Darmo No.45, Surabaya',
-            'password' => bcrypt('password'),
-        ]);
         // CATEGORIES
         $catBall    = Category::create(['name' => 'Ball Bearings',    'slug' => 'ball-bearings']);
         $catRoller  = Category::create(['name' => 'Roller Bearings',  'slug' => 'roller-bearings']);

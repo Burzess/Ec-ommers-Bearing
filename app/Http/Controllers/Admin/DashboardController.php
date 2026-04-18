@@ -19,9 +19,7 @@ class DashboardController extends Controller
         $revenueStatuses = ['paid', 'shipped', 'completed'];
 
         $totalProducts = Product::count();
-        $totalUsers = User::where(function (Builder $query): void {
-            $query->whereNull('role')->orWhere('role', '!=', 'admin');
-        })->count();
+        $totalUsers = User::where('role', User::ROLE_BUYER)->count();
 
         $totalOrders = Order::count();
         $totalRevenue = (float) Order::whereIn('status', $revenueStatuses)->sum('total_price');
@@ -114,9 +112,7 @@ class DashboardController extends Controller
         $trafficWindowStart = $now->copy()->subDays(30)->startOfDay();
 
         $uniqueTraffic = User::query()
-            ->where(function (Builder $query): void {
-                $query->whereNull('role')->orWhere('role', '!=', 'admin');
-            })
+            ->where('role', User::ROLE_BUYER)
             ->where(function (Builder $query) use ($trafficWindowStart): void {
                 $query->whereDate('created_at', '>=', $trafficWindowStart)
                     ->orWhereHas('orders', function (Builder $orderQuery) use ($trafficWindowStart): void {
@@ -126,9 +122,7 @@ class DashboardController extends Controller
             ->count();
 
         $convertedTraffic = User::query()
-            ->where(function (Builder $query): void {
-                $query->whereNull('role')->orWhere('role', '!=', 'admin');
-            })
+            ->where('role', User::ROLE_BUYER)
             ->whereHas('orders', function (Builder $orderQuery) use ($trafficWindowStart): void {
                 $orderQuery->whereDate('created_at', '>=', $trafficWindowStart);
             })

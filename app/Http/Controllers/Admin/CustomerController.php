@@ -11,9 +11,7 @@ class CustomerController extends Controller
     public function index(): View
     {
         $customers = User::query()
-            ->where(function ($query) {
-                $query->whereNull('role')->orWhere('role', '!=', 'admin');
-            })
+            ->where('role', User::ROLE_BUYER)
             ->withCount('orders')
             ->latest()
             ->get();
