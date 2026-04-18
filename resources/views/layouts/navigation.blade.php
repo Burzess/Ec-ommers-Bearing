@@ -1,7 +1,7 @@
 <nav x-data="{ open: false }" class="sticky top-0 z-50 border-b-2 border-black bg-[#500000]">
     <div class="relative mx-auto flex h-16 max-w-[1440px] items-center justify-between px-4 md:px-8">
         <a href="{{ route('dashboard') }}" class="shrink-0">
-            <x-application-logo class="h-32 w-auto object-contain" />
+            <x-application-logo class="h-16 w-auto object-contain" />
         </a>
 
         <div class="absolute left-1/2 hidden -translate-x-1/2 items-center gap-12 md:flex">
