@@ -92,6 +92,19 @@ class MasterDataSeeder extends Seeder
         ]);
 
         User::query()->updateOrCreate([
+            'email' => 'owner@asianbearindo.com',
+        ], [
+            'name' => 'Owner Asian Bearindo',
+            'username' => 'owner',
+            'phone' => '081211110000',
+            'address' => 'Jl. Tanjungsari No.19, Sukomanunggal, Surabaya',
+            'shipping_city_id' => $surabaya->id,
+            'postal_code' => '60188',
+            'password' => bcrypt('password'),
+            'role' => User::ROLE_OWNER,
+        ]);
+
+        User::query()->updateOrCreate([
             'email' => 'admin@asianbearindo.com',
         ], [
             'name' => 'Admin Asian Bearindo',

@@ -16,6 +16,7 @@ class User extends Authenticatable
 {
     public const ROLE_ADMIN = 'admin';
     public const ROLE_BUYER = 'buyer';
+    public const ROLE_OWNER = 'owner';
 
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable;
@@ -56,5 +57,10 @@ class User extends Authenticatable
     public function isBuyer(): bool
     {
         return $this->role === self::ROLE_BUYER;
+    }
+
+    public function isOwner(): bool
+    {
+        return $this->role === self::ROLE_OWNER;
     }
 }

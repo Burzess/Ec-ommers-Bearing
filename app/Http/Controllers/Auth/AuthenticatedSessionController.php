@@ -28,6 +28,10 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
+        if ($request->user()?->isOwner()) {
+            return redirect()->route('owner.dashboard');
+        }
+
         if ($request->user()?->isAdmin()) {
             return redirect()->route('admin.dashboard');
         }
