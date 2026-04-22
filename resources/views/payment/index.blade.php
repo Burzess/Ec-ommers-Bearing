@@ -1,5 +1,6 @@
 <x-app-layout>
-    <div class="overflow-hidden bg-white px-4 py-4 font-['Poppins'] md:py-8">
+    <div class="overflow-hidden bg-white px-4 py-4 font-['Poppins'] md:py-8"
+        x-data="{ shippingCityId: @js((string) ($selectedShippingCity?->id ?? '')), paymentMethod: @js((string) ($selectedPaymentMethod?->code ?? '')) }">
         <div class="mx-auto max-w-[1100px]">
             <div class="flex flex-col items-stretch md:flex-row">
                 <div class="flex w-full flex-col border-black pb-8 md:w-1/2 md:border-r-[10px] md:pb-0 md:pr-12">
@@ -16,6 +17,7 @@
                                     </label>
                                     <div class="relative">
                                         <select id="shipping_city_id" name="shipping_city_id"
+                                            x-model="shippingCityId"
                                             class="block w-full rounded-lg border-0 px-4 py-3 text-sm font-bold uppercase text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-200 focus:ring-2 focus:ring-inset focus:ring-[#a20202] sm:leading-6"
                                             required>
                                             @foreach ($shippingCities as $shippingCity)
@@ -27,6 +29,9 @@
                                         </select>
                                         <svg class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                                     </div>
+                                    @error('shipping_city_id')
+                                        <p class="text-sm font-semibold text-red-600">{{ $message }}</p>
+                                    @enderror
                                 </div>
 
                                 <div class="space-y-2">
@@ -51,6 +56,7 @@
                                     </label>
                                     <div class="relative">
                                         <select id="payment_method" name="payment_method"
+                                            x-model="paymentMethod"
                                             class="block w-full rounded-lg border-0 px-4 py-3 text-sm font-bold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-200 focus:ring-2 focus:ring-inset focus:ring-[#a20202] sm:leading-6"
                                             required>
                                             @foreach ($paymentMethods as $paymentMethod)
@@ -62,6 +68,9 @@
                                         </select>
                                         <svg class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                                     </div>
+                                    @error('payment_method')
+                                        <p class="text-sm font-semibold text-red-600">{{ $message }}</p>
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -140,11 +149,17 @@
                     </div>
 
                     <div class="mt-8 flex justify-end pb-8">
-                        <button type="button"
-                            class="rounded-full bg-[#a20202] px-10 py-2.5 text-[15px] font-black uppercase tracking-widest text-white shadow-xl transition-all hover:scale-105 hover:bg-[#8a0202] disabled:cursor-not-allowed disabled:bg-gray-400"
-                            @disabled($cart->items->isEmpty())>
-                            SIMPAN
-                        </button>
+                        <form method="POST" action="{{ route('payment.store') }}">
+                            @csrf
+                            <input type="hidden" name="shipping_city_id" :value="shippingCityId">
+                            <input type="hidden" name="payment_method" :value="paymentMethod">
+
+                            <button type="submit"
+                                class="rounded-full bg-[#a20202] px-10 py-2.5 text-[15px] font-black uppercase tracking-widest text-white shadow-xl transition-all hover:scale-105 hover:bg-[#8a0202] disabled:cursor-not-allowed disabled:bg-gray-400"
+                                @disabled($cart->items->isEmpty() || $shippingCities->isEmpty() || $paymentMethods->isEmpty())>
+                                LANJUTKAN PEMBAYARAN
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

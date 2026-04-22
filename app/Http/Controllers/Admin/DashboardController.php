@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Models\Order;
 use App\Models\Product;
 use App\Models\User;
-use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\View\View;
 
@@ -16,75 +15,10 @@ class DashboardController extends Controller
     {
         $now = now();
 
-        $revenueStatuses = ['paid', 'shipped', 'completed'];
-
         $totalProducts = Product::count();
         $totalUsers = User::where('role', User::ROLE_BUYER)->count();
 
         $totalOrders = Order::count();
-        $totalRevenue = (float) Order::whereIn('status', $revenueStatuses)->sum('total_price');
-
-        $dailyRows = Order::query()
-            ->selectRaw('DATE(created_at) as period, SUM(total_price) as total')
-            ->whereIn('status', $revenueStatuses)
-            ->whereDate('created_at', '>=', $now->copy()->subDays(6)->startOfDay())
-            ->groupBy('period')
-            ->pluck('total', 'period');
-
-        $dailyLabels = [];
-        $dailyValues = [];
-
-        for ($i = 6; $i >= 0; $i--) {
-            $date = $now->copy()->subDays($i);
-            $key = $date->toDateString();
-
-            $dailyLabels[] = $date->translatedFormat('d M');
-            $dailyValues[] = (float) ($dailyRows[$key] ?? 0);
-        }
-
-        $weeklyRows = Order::query()
-            ->whereIn('status', $revenueStatuses)
-            ->whereDate('created_at', '>=', $now->copy()->subWeeks(7)->startOfWeek(Carbon::MONDAY))
-            ->get(['created_at', 'total_price'])
-            ->groupBy(function (Order $order): string {
-                return $order->created_at->format('o-W');
-            })
-            ->map(function ($orders): float {
-                return (float) $orders->sum('total_price');
-            });
-
-        $weeklyLabels = [];
-        $weeklyValues = [];
-
-        for ($i = 7; $i >= 0; $i--) {
-            $weekDate = $now->copy()->subWeeks($i);
-            $key = $weekDate->format('o-W');
-
-            $weeklyLabels[] = 'Mgg ' . $weekDate->format('W');
-            $weeklyValues[] = (float) ($weeklyRows[$key] ?? 0);
-        }
-
-        $monthlyRows = Order::query()
-            ->whereIn('status', $revenueStatuses)
-            ->whereDate('created_at', '>=', $now->copy()->subMonths(5)->startOfMonth())
-            ->get(['created_at', 'total_price'])
-            ->groupBy(function (Order $order): string {
-                return $order->created_at->format('Y-m');
-            })
-            ->map(function ($orders): float {
-                return (float) $orders->sum('total_price');
-            });
-
-        $monthlyLabels = [];
-        $monthlyValues = [];
-
-        for ($i = 5; $i >= 0; $i--) {
-            $monthDate = $now->copy()->subMonths($i);
-            $key = $monthDate->format('Y-m');
-
-            $monthlyLabels[] = $monthDate->translatedFormat('M Y');
-            $monthlyValues[] = (float) ($monthlyRows[$key] ?? 0);
-        }
 
         $orderStatusSummary = [
             [
@@ -145,28 +79,11 @@ class DashboardController extends Controller
             ->take(5)
             ->get();
 
-        $revenueChart = [
-            'daily' => [
-                'labels' => $dailyLabels,
-                'values' => $dailyValues,
-            ],
-            'weekly' => [
-                'labels' => $weeklyLabels,
-                'values' => $weeklyValues,
-            ],
-            'monthly' => [
-                'labels' => $monthlyLabels,
-                'values' => $monthlyValues,
-            ],
-        ];
-
         return view('admin.dashboard', compact(
             'totalProducts',
             'totalUsers',
             'totalOrders',
-            'totalRevenue',
             'recentOrders',
-            'revenueChart',
             'orderStatusSummary',
             'uniqueTraffic',
             'conversionRate',

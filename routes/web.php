@@ -47,6 +47,9 @@ Route::middleware(['auth', 'buyer'])->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::get('/payment', [PaymentController::class, 'index'])->name('payment.index');
+    Route::post('/payment', [PaymentController::class, 'store'])->name('payment.store');
+    Route::get('/orders/{order}', [\App\Http\Controllers\OrderController::class, 'show'])->name('orders.show');
+    Route::post('/orders/{order}/payment-proof', [\App\Http\Controllers\OrderController::class, 'uploadPaymentProof'])->name('orders.payment-proof.store');
 });
 
 Route::middleware(['auth', 'owner'])->prefix('owner')->name('owner.')->group(function () {
@@ -59,6 +62,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::resource('/products', \App\Http\Controllers\Admin\ProductController::class)->except('show');
     Route::resource('/categories', \App\Http\Controllers\Admin\CategoryController::class)->except('show');
     Route::resource('/orders', \App\Http\Controllers\Admin\OrderController::class)->only(['index', 'show', 'update', 'destroy']);
+    Route::post('/orders/{order}/transfer-proof/review', [\App\Http\Controllers\Admin\OrderController::class, 'reviewTransferProof'])->name('orders.transfer-proof.review');
     Route::resource('/customers', \App\Http\Controllers\Admin\CustomerController::class)->only(['index']);
     Route::get('/company-setting', [\App\Http\Controllers\Admin\CompanySettingController::class, 'edit'])->name('company-setting.edit');
     Route::patch('/company-setting', [\App\Http\Controllers\Admin\CompanySettingController::class, 'update'])->name('company-setting.update');

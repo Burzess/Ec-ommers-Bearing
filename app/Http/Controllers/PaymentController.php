@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Actions\PlaceOrderAction;
+use App\Http\Requests\StorePaymentCheckoutRequest;
 use App\Models\PaymentMethod;
 use App\Models\ShippingCity;
+use DomainException;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
@@ -48,5 +52,31 @@ class PaymentController extends Controller
             'shippingCost' => $shippingCost,
             'grandTotal' => $grandTotal,
         ]);
+    }
+
+    public function store(
+        StorePaymentCheckoutRequest $request,
+        PlaceOrderAction $placeOrderAction,
+    ): RedirectResponse {
+        $validated = $request->validated();
+
+        try {
+            $order = $placeOrderAction->handle(
+                user: $request->user(),
+                shippingCityId: (int) $validated['shipping_city_id'],
+                paymentMethodCode: (string) $validated['payment_method'],
+            );
+        } catch (DomainException $exception) {
+            return redirect()
+                ->route('payment.index', [
+                    'shipping_city_id' => $validated['shipping_city_id'],
+                    'payment_method' => $validated['payment_method'],
+                ])
+                ->with('error', $exception->getMessage());
+        }
+
+        return redirect()
+            ->route('orders.show', $order)
+            ->with('success', "Pesanan {$order->invoice_number} berhasil dibuat. Silakan lanjutkan pembayaran.");
     }
 }

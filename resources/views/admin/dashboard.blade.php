@@ -3,18 +3,7 @@
         Dashboard & Analitik Utama
     </x-slot>
 
-    <div class="mb-8 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
-        <div class="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
-            <div class="mb-3 inline-flex rounded-lg bg-red-50 p-2 text-[#A20202]">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0" /></svg>
-            </div>
-            <div>
-                <p class="text-sm font-semibold text-gray-500">Pendapatan Terealisasi</p>
-                <p class="mt-1 text-xl font-bold text-gray-900">Rp{{ number_format($totalRevenue, 0, ',', '.') }}</p>
-                <p class="mt-1 text-[11px] text-gray-400">Total dana dari pesanan yang sudah dibayar atau selesai.</p>
-            </div>
-        </div>
-
+    <div class="mb-8 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
         <div class="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
             <div class="mb-3 inline-flex rounded-lg bg-blue-50 p-2 text-blue-600">
                 <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" /></svg>
@@ -49,67 +38,7 @@
         </div>
     </div>
 
-    <div class="mb-8 grid grid-cols-1 gap-6 xl:grid-cols-3">
-        <section
-            x-data="{
-                chart: @js($revenueChart),
-                activePeriod: 'daily',
-                get current() { return this.chart[this.activePeriod] },
-                get maxValue() { return Math.max(...this.current.values, 1) },
-                barHeight(value) { return Math.max((value / this.maxValue) * 100, 8) },
-                formatCurrency(value) { return new Intl.NumberFormat('id-ID').format(value) }
-            }"
-            class="xl:col-span-2 rounded-xl border border-gray-100 bg-white p-5 shadow-sm"
-        >
-            <div class="mb-5 flex flex-wrap items-center justify-between gap-3">
-                <div>
-                    <h3 class="text-lg font-bold text-gray-900">Ringkasan Penjualan</h3>
-                    <p class="text-sm text-gray-500">Grafik pendapatan harian, mingguan, dan bulanan.</p>
-                    <p class="mt-0.5 text-[10px] text-gray-400 italic" x-show="activePeriod === 'weekly'">*Keterangan: 'Mgg' merujuk pada urutan minggu dalam kalender tahun ini.</p>
-                </div>
-                <div class="inline-flex rounded-lg border border-gray-200 p-1">
-                    <button
-                        type="button"
-                        @click="activePeriod = 'daily'"
-                        :class="activePeriod === 'daily' ? 'bg-[#A20202] text-white' : 'text-gray-600 hover:bg-gray-100'"
-                        class="rounded-md px-3 py-1.5 text-xs font-semibold"
-                    >
-                        Harian
-                    </button>
-                    <button
-                        type="button"
-                        @click="activePeriod = 'weekly'"
-                        :class="activePeriod === 'weekly' ? 'bg-[#A20202] text-white' : 'text-gray-600 hover:bg-gray-100'"
-                        class="rounded-md px-3 py-1.5 text-xs font-semibold"
-                    >
-                        Mingguan
-                    </button>
-                    <button
-                        type="button"
-                        @click="activePeriod = 'monthly'"
-                        :class="activePeriod === 'monthly' ? 'bg-[#A20202] text-white' : 'text-gray-600 hover:bg-gray-100'"
-                        class="rounded-md px-3 py-1.5 text-xs font-semibold"
-                    >
-                        Bulanan
-                    </button>
-                </div>
-            </div>
-
-            <div class="flex h-64 items-end gap-2 px-2 sm:gap-4">
-                <template x-for="(value, index) in current.values" :key="index">
-                    <div class="flex flex-1 flex-col items-center justify-end gap-2 h-full">
-                        <p class="text-[10px] font-bold text-gray-400" x-text="'Rp' + formatCurrency(value)"></p>
-                        <div 
-                            class="w-full rounded-t-lg bg-[#A20202] transition-all duration-500 hover:bg-[#7f0000]" 
-                            :style="`height: ${barHeight(value)}%`"
-                            :title="'Rp' + formatCurrency(value)"
-                        ></div>
-                        <p class="text-[11px] font-medium text-gray-500" x-text="current.labels[index]"></p>
-                    </div>
-                </template>
-            </div>
-        </section>
-
+    <div class="mb-8">
         <section class="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
             <h3 class="text-lg font-bold text-gray-900">Status Pesanan</h3>
             <p class="mb-4 text-sm text-gray-500">Monitoring tahapan pesanan saat ini.</p>
