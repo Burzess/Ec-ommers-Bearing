@@ -11,6 +11,7 @@
             <div>
                 <p class="text-sm font-semibold text-gray-500">Pendapatan Terealisasi</p>
                 <p class="mt-1 text-xl font-bold text-gray-900">Rp{{ number_format($totalRevenue, 0, ',', '.') }}</p>
+                <p class="mt-1 text-[11px] text-gray-400">Total dana dari pesanan yang sudah dibayar atau selesai.</p>
             </div>
         </div>
 
@@ -21,6 +22,7 @@
             <div>
                 <p class="text-sm font-semibold text-gray-500">Total Pesanan</p>
                 <p class="mt-1 text-2xl font-bold text-gray-900">{{ number_format($totalOrders) }}</p>
+                <p class="mt-1 text-[11px] text-gray-400">Jumlah seluruh pesanan yang masuk ke sistem.</p>
             </div>
         </div>
 
@@ -31,6 +33,7 @@
             <div>
                 <p class="text-sm font-semibold text-gray-500">Trafik Unik (30 Hari)</p>
                 <p class="mt-1 text-2xl font-bold text-gray-900">{{ number_format($uniqueTraffic) }}</p>
+                <p class="mt-1 text-[11px] text-gray-400">Jumlah pelanggan unik yang aktif dalam 30 hari terakhir.</p>
             </div>
         </div>
 
@@ -41,6 +44,7 @@
             <div>
                 <p class="text-sm font-semibold text-gray-500">Conversion Rate</p>
                 <p class="mt-1 text-2xl font-bold text-gray-900">{{ number_format($conversionRate, 2, ',', '.') }}%</p>
+                <p class="mt-1 text-[11px] text-gray-400">Persentase pengunjung yang menjadi pembeli.</p>
             </div>
         </div>
     </div>
@@ -61,6 +65,7 @@
                 <div>
                     <h3 class="text-lg font-bold text-gray-900">Ringkasan Penjualan</h3>
                     <p class="text-sm text-gray-500">Grafik pendapatan harian, mingguan, dan bulanan.</p>
+                    <p class="mt-0.5 text-[10px] text-gray-400 italic" x-show="activePeriod === 'weekly'">*Keterangan: 'Mgg' merujuk pada urutan minggu dalam kalender tahun ini.</p>
                 </div>
                 <div class="inline-flex rounded-lg border border-gray-200 p-1">
                     <button
@@ -90,12 +95,16 @@
                 </div>
             </div>
 
-            <div class="grid h-64 grid-cols-6 items-end gap-3 sm:grid-cols-8">
+            <div class="flex h-64 items-end gap-2 px-2 sm:gap-4">
                 <template x-for="(value, index) in current.values" :key="index">
-                    <div class="flex flex-col items-center justify-end gap-2">
-                        <p class="text-[11px] font-semibold text-gray-500" x-text="'Rp' + formatCurrency(value)"></p>
-                        <div class="w-full rounded-t-md bg-[#A20202]/15 transition-all duration-300" :style="`height: ${barHeight(value)}%`"></div>
-                        <p class="text-[11px] text-gray-500" x-text="current.labels[index]"></p>
+                    <div class="flex flex-1 flex-col items-center justify-end gap-2 h-full">
+                        <p class="text-[10px] font-bold text-gray-400" x-text="'Rp' + formatCurrency(value)"></p>
+                        <div 
+                            class="w-full rounded-t-lg bg-[#A20202] transition-all duration-500 hover:bg-[#7f0000]" 
+                            :style="`height: ${barHeight(value)}%`"
+                            :title="'Rp' + formatCurrency(value)"
+                        ></div>
+                        <p class="text-[11px] font-medium text-gray-500" x-text="current.labels[index]"></p>
                     </div>
                 </template>
             </div>
@@ -201,8 +210,9 @@
     </div>
 
     <div class="w-full overflow-hidden rounded-xl border border-gray-100 bg-white shadow-sm">
-        <div class="flex items-center justify-between border-b border-gray-100 px-6 py-5">
+        <div class="flex flex-col border-b border-gray-100 px-6 py-5">
             <h3 class="text-lg font-bold text-gray-900">Transaksi Terkini</h3>
+            <p class="text-xs text-gray-500">Daftar 5 pesanan terbaru yang masuk ke sistem.</p>
         </div>
         <div class="w-full overflow-x-auto">
             <table class="js-admin-datatable w-full whitespace-nowrap" data-page-length="5">

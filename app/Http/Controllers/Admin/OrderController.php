@@ -36,8 +36,7 @@ class OrderController extends Controller
                 $query->where('status', $status);
             })
             ->latest()
-            ->paginate(10)
-            ->withQueryString();
+            ->get();
 
         return view('admin.orders.index', compact('orders', 'search', 'status', 'statuses'));
     }

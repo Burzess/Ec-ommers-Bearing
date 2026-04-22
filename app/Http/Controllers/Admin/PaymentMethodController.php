@@ -15,14 +15,17 @@ class PaymentMethodController extends Controller
     {
         $paymentMethods = PaymentMethod::query()
             ->ordered()
-            ->paginate(10);
+            ->get();
 
         return view('admin.payment-methods.index', compact('paymentMethods'));
     }
 
     public function create(): View
     {
-        return view('admin.payment-methods.create');
+        // Ambil urutan terbesar lalu tambah 1
+        $nextSortOrder = PaymentMethod::query()->max('sort_order') + 1;
+
+        return view('admin.payment-methods.create', compact('nextSortOrder'));
     }
 
     public function store(StorePaymentMethodRequest $request): RedirectResponse

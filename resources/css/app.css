@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .dataTables_wrapper .dataTables_filter,
 .dataTables_wrapper .dataTables_length,
@@ -23,14 +23,64 @@
 .dataTables_wrapper .dataTables_paginate .paginate_button.current,
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
 	border: 1px solid #a20202 !important;
-	background: #a20202 !important;
-	color: #fff !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	background-image: none !important;
+	color: #a20202 !important;
 	border-radius: 0.5rem;
 }
 
-.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	border: 1px solid #e5e7eb !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	background-image: none !important;
 	border-radius: 0.5rem;
-	border: 1px solid rgb(229 231 235) !important;
-	background: rgb(249 250 251) !important;
-	color: rgb(17 24 39) !important;
+	padding: 0.4rem 0.8rem !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+	background: transparent !important;
+	background-color: transparent !important;
+	background-image: none !important;
+	border: 1px solid #d1d5db !important;
+	color: #111827 !important;
+}
+
+/* Sembunyikan panah sorting pada kolom No. */
+.dataTables_wrapper thead th.no-sort:before,
+.dataTables_wrapper thead th.no-sort:after {
+	display: none !important;
+}
+
+/* Menghilangkan padding atas agar tabel bisa naik */
+.dataTables_wrapper {
+	padding-top: 0 !important;
+}
+
+/* Mengatur agar kotak pencarian berada di kanan dan sejajar */
+.dataTables_wrapper .dataTables_filter {
+	float: right;
+	margin-bottom: 0.75rem;
+}
+
+/* Memastikan tabel bersih dari float */
+.dataTables_wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Container tombol aksi yang ditarik ke atas agar sejajar dengan Search */
+.js-table-actions {
+	margin-bottom: -2.35rem;
+	/* Angka ini akan menarik tabel ke atas hingga sejajar */
+	position: relative;
+	z-index: 10;
+	pointer-events: none;
+}
+
+.js-table-actions>* {
+	pointer-events: auto;
+	/* Tombol tetap bisa diklik */
 }

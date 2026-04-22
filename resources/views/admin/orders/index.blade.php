@@ -3,20 +3,10 @@
         Kelola Pesanan
     </x-slot>
 
-    @if (session('success'))
-        <div class="mb-4 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm font-medium text-green-700">
-            {{ session('success') }}
-        </div>
-    @endif
 
-    @if (session('error'))
-        <div class="mb-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-medium text-red-700">
-            {{ session('error') }}
-        </div>
-    @endif
 
     <div class="rounded-xl border border-gray-200 bg-white p-4 shadow-sm sm:p-5">
-        <form action="{{ route('admin.orders.index') }}" method="GET" class="mb-4 grid grid-cols-1 gap-3 md:grid-cols-4">
+        <form action="{{ route('admin.orders.index') }}" method="GET" class="mb-1 grid grid-cols-1 gap-3 md:grid-cols-4">
             <div class="md:col-span-2">
                 <label for="q" class="sr-only">Cari pesanan</label>
                 <input id="q" name="q" type="text" value="{{ $search }}" placeholder="Cari invoice / nama / email pelanggan..." class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
@@ -41,9 +31,10 @@
         </form>
 
         <div class="overflow-x-auto">
-            <table class="min-w-full whitespace-nowrap">
+            <table class="js-admin-datatable min-w-full whitespace-nowrap" data-page-length="10" data-searching="false">
                 <thead>
                     <tr class="border-y border-gray-200 bg-gray-50 text-left text-xs font-bold uppercase tracking-wide text-gray-500">
+                        <th class="no-sort px-4 py-3">No.</th>
                         <th class="px-4 py-3">Invoice</th>
                         <th class="px-4 py-3">Pelanggan</th>
                         <th class="px-4 py-3">Total</th>
@@ -67,6 +58,7 @@
                         @endphp
 
                         <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-gray-500">{{ $loop->iteration }}</td>
                             <td class="px-4 py-3 font-semibold text-gray-800">#{{ $order->invoice_number }}</td>
                             <td class="px-4 py-3">
                                 <p class="font-semibold text-gray-800">{{ $order->user?->name ?? '-' }}</p>
@@ -100,8 +92,5 @@
             </table>
         </div>
 
-        <div class="mt-4">
-            {{ $orders->links() }}
-        </div>
     </div>
 </x-admin-layout>

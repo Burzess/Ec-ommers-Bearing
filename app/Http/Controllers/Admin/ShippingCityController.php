@@ -17,7 +17,7 @@ class ShippingCityController extends Controller
         $shippingCities = ShippingCity::query()
             ->withCount('users')
             ->latest()
-            ->paginate(10);
+            ->get();
 
         return view('admin.shipping-cities.index', compact('shippingCities'));
     }

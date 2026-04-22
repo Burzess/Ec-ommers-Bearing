@@ -3,13 +3,15 @@
 <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
     <div class="md:col-span-2">
         <label for="name" class="mb-1 block text-sm font-semibold text-gray-700">Nama Produk</label>
-        <input id="name" name="name" type="text" value="{{ old('name', $product->name ?? '') }}" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+        <input id="name" name="name" type="text" value="{{ old('name', $product->name ?? '') }}" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]" placeholder="Contoh: SKF Deep Groove Ball Bearing">
+        <p class="mt-1 text-[11px] text-gray-400">Gunakan nama lengkap beserta brand dan tipe produk.</p>
         @error('name')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
     </div>
 
     <div>
         <label for="sku" class="mb-1 block text-sm font-semibold text-gray-700">SKU</label>
-        <input id="sku" name="sku" type="text" value="{{ old('sku', $product->sku ?? '') }}" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+        <input id="sku" name="sku" type="text" value="{{ old('sku', $product->sku ?? '') }}" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]" placeholder="Contoh: SKF-6204-2Z">
+        <p class="mt-1 text-[11px] text-gray-400">Kode unik stok barang. Tidak boleh sama dengan produk lain.</p>
         @error('sku')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
     </div>
 
@@ -28,43 +30,47 @@
 
     <div>
         <label for="price" class="mb-1 block text-sm font-semibold text-gray-700">Harga</label>
-        <input id="price" name="price" type="number" step="0.01" value="{{ old('price', $product->price ?? '') }}" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+        <input id="price" name="price" type="number" step="0.01" value="{{ old('price', $product->price ?? '') }}" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]" placeholder="Contoh: 50000">
+        <p class="mt-1 text-[11px] text-gray-400">Masukkan harga jual per unit.</p>
         @error('price')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
     </div>
 
     <div>
         <label for="stock" class="mb-1 block text-sm font-semibold text-gray-700">Stok</label>
-        <input id="stock" name="stock" type="number" min="0" value="{{ old('stock', $product->stock ?? 0) }}" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+        <input id="stock" name="stock" type="number" min="0" value="{{ old('stock', $product->stock ?? 0) }}" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]" placeholder="Contoh: 100">
+        <p class="mt-1 text-[11px] text-gray-400">Jumlah ketersediaan barang saat ini.</p>
         @error('stock')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
     </div>
 
     <div>
         <label for="inner_diameter" class="mb-1 block text-sm font-semibold text-gray-700">Inner Diameter (mm)</label>
-        <input id="inner_diameter" name="inner_diameter" type="number" step="0.01" value="{{ old('inner_diameter', $product->inner_diameter ?? '') }}" class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+        <input id="inner_diameter" name="inner_diameter" type="number" step="0.01" value="{{ old('inner_diameter', $product->inner_diameter ?? '') }}" class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]" placeholder="Contoh: 20">
         @error('inner_diameter')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
     </div>
 
     <div>
         <label for="outer_diameter" class="mb-1 block text-sm font-semibold text-gray-700">Outer Diameter (mm)</label>
-        <input id="outer_diameter" name="outer_diameter" type="number" step="0.01" value="{{ old('outer_diameter', $product->outer_diameter ?? '') }}" class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+        <input id="outer_diameter" name="outer_diameter" type="number" step="0.01" value="{{ old('outer_diameter', $product->outer_diameter ?? '') }}" class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]" placeholder="Contoh: 47">
         @error('outer_diameter')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
     </div>
 
     <div>
         <label for="thickness" class="mb-1 block text-sm font-semibold text-gray-700">Thickness (mm)</label>
-        <input id="thickness" name="thickness" type="number" step="0.01" value="{{ old('thickness', $product->thickness ?? '') }}" class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+        <input id="thickness" name="thickness" type="number" step="0.01" value="{{ old('thickness', $product->thickness ?? '') }}" class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]" placeholder="Contoh: 14">
         @error('thickness')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
     </div>
 
     <div class="md:col-span-2">
         <label for="description" class="mb-1 block text-sm font-semibold text-gray-700">Deskripsi</label>
-        <textarea id="description" name="description" rows="4" class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">{{ old('description', $product->description ?? '') }}</textarea>
+        <textarea id="description" name="description" rows="4" class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]" placeholder="Jelaskan detail spesifikasi produk..."></textarea>
+        <p class="mt-1 text-[11px] text-gray-400">Berikan penjelasan detail agar pembeli tidak salah pilih.</p>
         @error('description')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
     </div>
 
     <div class="md:col-span-2">
         <label for="image" class="mb-1 block text-sm font-semibold text-gray-700">Gambar Produk</label>
         <input id="image" name="image" type="file" accept="image/*" class="w-full rounded-lg border border-gray-300 bg-white p-2 text-sm file:mr-3 file:rounded-md file:border-0 file:bg-gray-100 file:px-3 file:py-2 file:text-sm file:font-semibold file:text-gray-700 hover:file:bg-gray-200">
+        <p class="mt-1 text-[11px] text-gray-400">Format: JPG, PNG, WebP. Maksimal 2MB.</p>
         @error('image')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
 
         @if (!empty($product?->image))

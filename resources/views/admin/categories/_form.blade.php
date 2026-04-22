@@ -11,6 +11,7 @@
         class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]"
         placeholder="Contoh: Ball Bearings"
     >
+    <p class="mt-1 text-[11px] text-gray-400 italic">Gunakan nama yang jelas untuk membedakan jenis bearing.</p>
     @error('name')
         <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
     @enderror

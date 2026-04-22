@@ -313,5 +313,7 @@ class DatabaseSeeder extends Seeder
             'image'          => 'products/angular_contact_bearing.jpeg',
             'description'    => 'NTN 7208B untuk aplikasi kecepatan tinggi dan presisi. Sudut kontak 40° memberikan kapasitas beban aksial superior. Direkomendasikan untuk pompa sentrifugal dan turbocharger.',
         ]);
+
+        $this->call(DummyEcommerceSeeder::class);
     }
 }

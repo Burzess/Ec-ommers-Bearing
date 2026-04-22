@@ -29,14 +29,14 @@ class AuthenticatedSessionController extends Controller
         $request->session()->regenerate();
 
         if ($request->user()?->isOwner()) {
-            return redirect()->route('owner.dashboard');
+            return redirect()->route('owner.dashboard')->with('success', 'Selamat datang kembali, Owner!');
         }
 
         if ($request->user()?->isAdmin()) {
-            return redirect()->route('admin.dashboard');
+            return redirect()->route('admin.dashboard')->with('success', 'Login berhasil! Selamat bekerja, Admin.');
         }
 
-        return redirect()->intended(route('dashboard', absolute: false));
+        return redirect()->intended(route('dashboard', absolute: false))->with('success', 'Login berhasil! Selamat berbelanja.');
     }
 
     /**
@@ -50,6 +50,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return redirect('/')->with('success', 'Anda telah berhasil keluar. Sampai jumpa lagi!');
     }
 }

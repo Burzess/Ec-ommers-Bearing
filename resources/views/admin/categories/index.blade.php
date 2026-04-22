@@ -3,14 +3,9 @@
         Kelola Kategori
     </x-slot>
 
-    @if (session('success'))
-        <div class="mb-4 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm font-medium text-green-700">
-            {{ session('success') }}
-        </div>
-    @endif
 
     <div class="rounded-xl border border-gray-200 bg-white p-4 shadow-sm sm:p-5">
-        <div class="mb-4 flex items-center justify-between">
+        <div class="js-table-actions flex items-center justify-between">
             <a href="{{ route('admin.categories.create') }}" class="inline-flex items-center justify-center rounded-lg bg-[#A20202] px-4 py-2 text-sm font-semibold text-white hover:bg-[#870101]">
                 + Tambah Kategori
             </a>
@@ -20,6 +15,7 @@
             <table class="js-admin-datatable min-w-full whitespace-nowrap" data-page-length="10">
                 <thead>
                     <tr class="border-y border-gray-200 bg-gray-50 text-left text-xs font-bold uppercase tracking-wide text-gray-500">
+                        <th class="no-sort px-4 py-3">No.</th>
                         <th class="px-4 py-3">Nama Kategori</th>
                         <th class="px-4 py-3">Slug</th>
                         <th class="px-4 py-3">Jumlah Produk</th>
@@ -29,6 +25,7 @@
                 <tbody class="divide-y divide-gray-100 text-sm text-gray-700">
                     @foreach ($categories as $category)
                         <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-gray-500">{{ $loop->iteration }}</td>
                             <td class="px-4 py-3 font-semibold text-gray-800">{{ $category->name }}</td>
                             <td class="px-4 py-3 text-gray-500">{{ $category->slug }}</td>
                             <td class="px-4 py-3">

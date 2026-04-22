@@ -3,11 +3,6 @@
         Profil Perusahaan
     </x-slot>
 
-    @if (session('success'))
-        <div class="mb-4 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm font-medium text-green-700">
-            {{ session('success') }}
-        </div>
-    @endif
 
     <div class="rounded-xl border border-gray-200 bg-white p-5 shadow-sm sm:p-6">
         <h3 class="mb-4 text-lg font-bold text-gray-800">Pengaturan Informasi Perusahaan</h3>
@@ -18,26 +13,30 @@
 
             <div>
                 <label for="company_name" class="mb-1 block text-sm font-semibold text-gray-700">Nama Perusahaan</label>
-                <input id="company_name" name="company_name" type="text" value="{{ old('company_name', $companySetting->company_name) }}" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+                <input id="company_name" name="company_name" type="text" value="{{ old('company_name', $companySetting->company_name) }}" placeholder="Contoh: Asian Bearindo Jaya" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+                <p class="mt-1 text-xs italic text-gray-400">Nama resmi perusahaan (Maks. 255 karakter).</p>
                 @error('company_name')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
             </div>
 
             <div>
                 <label for="company_address" class="mb-1 block text-sm font-semibold text-gray-700">Alamat Perusahaan</label>
-                <textarea id="company_address" name="company_address" rows="4" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">{{ old('company_address', $companySetting->company_address) }}</textarea>
+                <textarea id="company_address" name="company_address" rows="4" placeholder="Masukkan alamat lengkap kantor pusat..." required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">{{ old('company_address', $companySetting->company_address) }}</textarea>
+                <p class="mt-1 text-xs italic text-gray-400">Alamat lengkap beserta kota dan kode pos (Maks. 1000 karakter).</p>
                 @error('company_address')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
             </div>
 
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
                 <div>
                     <label for="company_phone" class="mb-1 block text-sm font-semibold text-gray-700">Nomor Telepon</label>
-                    <input id="company_phone" name="company_phone" type="text" value="{{ old('company_phone', $companySetting->company_phone) }}" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+                    <input id="company_phone" name="company_phone" type="text" value="{{ old('company_phone', $companySetting->company_phone) }}" placeholder="Contoh: 0812-3456-7890" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+                    <p class="mt-1 text-xs italic text-gray-400">Nomor aktif yang bisa dihubungi pelanggan.</p>
                     @error('company_phone')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
                 </div>
 
                 <div>
                     <label for="company_email" class="mb-1 block text-sm font-semibold text-gray-700">Email Perusahaan</label>
-                    <input id="company_email" name="company_email" type="email" value="{{ old('company_email', $companySetting->company_email) }}" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+                    <input id="company_email" name="company_email" type="email" value="{{ old('company_email', $companySetting->company_email) }}" placeholder="admin@asianbearindo.com" required class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+                    <p class="mt-1 text-xs italic text-gray-400">Alamat email resmi untuk korespondensi.</p>
                     @error('company_email')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
                 </div>
             </div>
@@ -46,12 +45,14 @@
                 <div>
                     <label for="business_days" class="mb-1 block text-sm font-semibold text-gray-700">Hari Operasional</label>
                     <input id="business_days" name="business_days" type="text" value="{{ old('business_days', $companySetting->business_days) }}" placeholder="Contoh: Senin - Jumat" class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+                    <p class="mt-1 text-xs italic text-gray-400">Hari kerja operasional (Maks. 120 karakter).</p>
                     @error('business_days')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
                 </div>
 
                 <div>
                     <label for="business_hours" class="mb-1 block text-sm font-semibold text-gray-700">Jam Operasional</label>
                     <input id="business_hours" name="business_hours" type="text" value="{{ old('business_hours', $companySetting->business_hours) }}" placeholder="Contoh: 08.00 - 17.00" class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+                    <p class="mt-1 text-xs italic text-gray-400">Jam buka dan tutup (Maks. 120 karakter).</p>
                     @error('business_hours')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
                 </div>
             </div>
@@ -59,6 +60,7 @@
             <div>
                 <label for="maps_embed_url" class="mb-1 block text-sm font-semibold text-gray-700">Google Maps Embed URL</label>
                 <input id="maps_embed_url" name="maps_embed_url" type="url" value="{{ old('maps_embed_url', $companySetting->maps_embed_url) }}" placeholder="https://www.google.com/maps/embed?..." class="w-full rounded-lg border-gray-300 text-sm focus:border-[#A20202] focus:ring-[#A20202]">
+                <p class="mt-1 text-xs italic text-gray-400">Dapatkan URL dari menu 'Share' > 'Embed a map' di Google Maps.</p>
                 @error('maps_embed_url')<p class="mt-1 text-sm text-red-600">{{ $message }}</p>@enderror
             </div>
 

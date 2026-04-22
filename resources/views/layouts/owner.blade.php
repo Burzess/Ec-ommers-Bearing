@@ -105,5 +105,7 @@
                 </main>
             </div>
         </div>
+
+        @include('components.Toast-notification')
     </body>
 </html>

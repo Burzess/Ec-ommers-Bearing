@@ -3,14 +3,9 @@
         Katalog Produk
     </x-slot>
 
-    @if (session('success'))
-        <div class="mb-4 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm font-medium text-green-700">
-            {{ session('success') }}
-        </div>
-    @endif
 
     <div class="rounded-xl border border-gray-200 bg-white p-4 shadow-sm sm:p-5">
-        <div class="mb-4 flex items-center justify-between">
+        <div class="js-table-actions flex items-center justify-between">
             <a href="{{ route('admin.products.create') }}" class="inline-flex items-center justify-center rounded-lg bg-[#A20202] px-4 py-2 text-sm font-semibold text-white hover:bg-[#870101]">
                 + Tambah Produk
             </a>
@@ -20,6 +15,7 @@
             <table class="js-admin-datatable min-w-full whitespace-nowrap" data-page-length="10">
                 <thead>
                     <tr class="border-y border-gray-200 bg-gray-50 text-left text-xs font-bold uppercase tracking-wide text-gray-500">
+                        <th class="no-sort w-10 px-4 py-3 text-center">No.</th>
                         <th class="px-4 py-3">Produk</th>
                         <th class="px-4 py-3">Kategori</th>
                         <th class="px-4 py-3">SKU</th>
@@ -31,6 +27,7 @@
                 <tbody class="divide-y divide-gray-100 text-sm text-gray-700">
                     @foreach ($products as $product)
                         <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-center font-medium text-gray-400">{{ $loop->iteration }}</td>
                             <td class="px-4 py-3">
                                 <div class="flex items-center gap-3">
                                     @if ($product->image)

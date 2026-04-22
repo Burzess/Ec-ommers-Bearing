@@ -21,23 +21,29 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 
 		const pageLength = Number.parseInt(table.dataset.pageLength ?? '10', 10);
+		const searching = table.dataset.searching !== 'false';
 
 		new DataTable(table, {
-			pageLength: Number.isNaN(pageLength) ? 10 : pageLength,
-			lengthMenu: [10, 25, 50, 100],
+			searching: searching,
+			paging: true, // Pagination tetap ada
+			lengthChange: false, // Dropdown dihilangkan
+			pageLength: 50, // Menampilkan 50 data secara default agar "terlihat semua"
 			ordering: true,
+			order: [], // Jangan urutkan kolom apapun saat pertama kali dimuat
+			columnDefs: [
+				{ orderable: false, targets: '.no-sort' } // Matikan sorting pada kolom No.
+			],
 			language: {
 				search: 'Cari:',
-				lengthMenu: 'Tampilkan _MENU_ data',
 				info: 'Menampilkan _START_ sampai _END_ dari _TOTAL_ data',
 				infoEmpty: 'Tidak ada data',
 				emptyTable: 'Data tidak tersedia',
 				zeroRecords: 'Data tidak ditemukan',
 				paginate: {
-					first: 'Awal',
-					last: 'Akhir',
-					next: 'Berikutnya',
-					previous: 'Sebelumnya',
+					first: '&laquo;&laquo;', // Awal
+					last: '&raquo;&raquo;', // Akhir
+					next: '&raquo;', // Berikutnya
+					previous: '&laquo;', // Sebelumnya
 				},
 			},
 		});
