@@ -38,8 +38,81 @@
         </div>
     </div>
 
-    <div class="mb-8">
-        <section class="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
+    <div class="mb-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <section class="w-full overflow-hidden rounded-xl border border-gray-100 bg-white shadow-sm lg:col-span-2">
+            <div class="flex flex-col border-b border-gray-100 px-6 py-5">
+                <h3 class="text-lg font-bold text-gray-900">Transaksi Terkini</h3>
+                <p class="text-xs text-gray-500">Daftar 5 pesanan terbaru yang masuk ke sistem.</p>
+            </div>
+            <div class="w-full overflow-x-auto">
+                <table class="js-admin-datatable w-full whitespace-nowrap" data-page-length="5">
+                    <thead>
+                        <tr class="border-b border-gray-100 bg-gray-50/50 text-left text-xs font-bold uppercase tracking-wide text-gray-400">
+                            <th class="px-6 py-4">Nomor Invoice</th>
+                            <th class="px-6 py-4">Nama Pelanggan</th>
+                            <th class="px-6 py-4">Total Tagihan</th>
+                            <th class="px-6 py-4">Status Pesanan</th>
+                            <th class="px-6 py-4">Waktu Transaksi</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100 bg-white">
+                        @forelse ($recentOrders as $order)
+                            <tr class="text-gray-600 transition-colors hover:bg-gray-50/50">
+                                <td class="px-6 py-4 text-sm font-bold text-gray-800">
+                                    <a href="{{ route('admin.orders.show', $order) }}" class="hover:text-[#A20202] hover:underline">
+                                        #{{ $order->invoice_number }}
+                                    </a>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center text-sm">
+                                        <div class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-100 font-bold text-indigo-500">
+                                            {{ substr($order->user->name ?? 'T', 0, 1) }}
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-gray-800">{{ $order->user->name ?? 'Tamu' }}</p>
+                                            <p class="text-xs text-gray-500">{{ $order->user->email ?? '-' }}</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-sm font-semibold text-gray-800">
+                                    Rp{{ number_format($order->total_price, 0, ',', '.') }}
+                                </td>
+                                <td class="px-6 py-4 text-xs font-bold">
+                                    @php
+                                        $statusClasses = [
+                                            'pending' => 'bg-yellow-50 text-yellow-600 ring-1 ring-yellow-500/20',
+                                            'paid' => 'bg-blue-50 text-blue-600 ring-1 ring-blue-500/20',
+                                            'shipped' => 'bg-indigo-50 text-indigo-600 ring-1 ring-indigo-500/20',
+                                            'completed' => 'bg-green-50 text-green-600 ring-1 ring-green-500/20',
+                                            'cancelled' => 'bg-red-50 text-red-600 ring-1 ring-red-500/20',
+                                        ];
+                                        $statusClass = $statusClasses[$order->status] ?? 'bg-gray-50 text-gray-600 ring-1 ring-gray-500/20';
+                                    @endphp
+                                    <span class="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1.5 leading-tight {{ $statusClass }}">
+                                        <span class="h-1.5 w-1.5 rounded-full bg-current"></span>
+                                        {{ strtoupper($order->status) }}
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-500">
+                                    {{ $order->created_at->translatedFormat('d M Y, H:i') }}
+                                </td>
+                            </tr>
+                        @empty
+                            <tr>
+                                <td colspan="5" class="px-6 py-10 text-center text-gray-500">
+                                    <div class="flex flex-col items-center justify-center">
+                                        <svg class="mb-3 h-10 w-10 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" /></svg>
+                                        <p class="font-medium text-gray-400">Belum ada pesanan masuk bulan ini.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        @endforelse
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="rounded-xl border border-gray-100 bg-white p-5 shadow-sm lg:col-span-1">
             <h3 class="text-lg font-bold text-gray-900">Status Pesanan</h3>
             <p class="mb-4 text-sm text-gray-500">Monitoring tahapan pesanan saat ini.</p>
 
@@ -138,76 +211,4 @@
         </section>
     </div>
 
-    <div class="w-full overflow-hidden rounded-xl border border-gray-100 bg-white shadow-sm">
-        <div class="flex flex-col border-b border-gray-100 px-6 py-5">
-            <h3 class="text-lg font-bold text-gray-900">Transaksi Terkini</h3>
-            <p class="text-xs text-gray-500">Daftar 5 pesanan terbaru yang masuk ke sistem.</p>
-        </div>
-        <div class="w-full overflow-x-auto">
-            <table class="js-admin-datatable w-full whitespace-nowrap" data-page-length="5">
-                <thead>
-                    <tr class="border-b border-gray-100 bg-gray-50/50 text-left text-xs font-bold uppercase tracking-wide text-gray-400">
-                        <th class="px-6 py-4">Nomor Invoice</th>
-                        <th class="px-6 py-4">Nama Pelanggan</th>
-                        <th class="px-6 py-4">Total Tagihan</th>
-                        <th class="px-6 py-4">Status Pesanan</th>
-                        <th class="px-6 py-4">Waktu Transaksi</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-100 bg-white">
-                    @forelse ($recentOrders as $order)
-                        <tr class="text-gray-600 transition-colors hover:bg-gray-50/50">
-                            <td class="px-6 py-4 text-sm font-bold text-gray-800">
-                                <a href="{{ route('admin.orders.show', $order) }}" class="hover:text-[#A20202] hover:underline">
-                                    #{{ $order->invoice_number }}
-                                </a>
-                            </td>
-                            <td class="px-6 py-4">
-                                <div class="flex items-center text-sm">
-                                    <div class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-100 font-bold text-indigo-500">
-                                        {{ substr($order->user->name ?? 'T', 0, 1) }}
-                                    </div>
-                                    <div>
-                                        <p class="font-bold text-gray-800">{{ $order->user->name ?? 'Tamu' }}</p>
-                                        <p class="text-xs text-gray-500">{{ $order->user->email ?? '-' }}</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 text-sm font-semibold text-gray-800">
-                                Rp{{ number_format($order->total_price, 0, ',', '.') }}
-                            </td>
-                            <td class="px-6 py-4 text-xs font-bold">
-                                @php
-                                    $statusClasses = [
-                                        'pending' => 'bg-yellow-50 text-yellow-600 ring-1 ring-yellow-500/20',
-                                        'paid' => 'bg-blue-50 text-blue-600 ring-1 ring-blue-500/20',
-                                        'shipped' => 'bg-indigo-50 text-indigo-600 ring-1 ring-indigo-500/20',
-                                        'completed' => 'bg-green-50 text-green-600 ring-1 ring-green-500/20',
-                                        'cancelled' => 'bg-red-50 text-red-600 ring-1 ring-red-500/20',
-                                    ];
-                                    $statusClass = $statusClasses[$order->status] ?? 'bg-gray-50 text-gray-600 ring-1 ring-gray-500/20';
-                                @endphp
-                                <span class="inline-flex items-center gap-1.5 rounded-md px-2.5 py-1.5 leading-tight {{ $statusClass }}">
-                                    <span class="h-1.5 w-1.5 rounded-full bg-current"></span>
-                                    {{ strtoupper($order->status) }}
-                                </span>
-                            </td>
-                            <td class="px-6 py-4 text-sm font-medium text-gray-500">
-                                {{ $order->created_at->translatedFormat('d M Y, H:i') }}
-                            </td>
-                        </tr>
-                    @empty
-                        <tr>
-                            <td colspan="5" class="px-6 py-10 text-center text-gray-500">
-                                <div class="flex flex-col items-center justify-center">
-                                    <svg class="mb-3 h-10 w-10 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" /></svg>
-                                    <p class="font-medium text-gray-400">Belum ada pesanan masuk bulan ini.</p>
-                                </div>
-                            </td>
-                        </tr>
-                    @endforelse
-                </tbody>
-            </table>
-        </div>
-    </div>
 </x-admin-layout>
